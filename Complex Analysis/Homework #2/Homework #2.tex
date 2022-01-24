@@ -1,0 +1,522 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% This top part of the document is called the 'preamble'.  Modify it with caution!
+%
+% The real document starts below where it says 'The main document starts here'.
+
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{float}
+% Comment the following line to use TeX's default font of Computer Modern.
+\usepackage{times,txfonts}
+
+
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\newtheoremstyle{homework}% name of the style to be used
+  {18pt}% measure of space to leave above the theorem. E.g.: 3pt
+  {12pt}% measure of space to leave below the theorem. E.g.: 3pt
+  {}% name of font to use in the body of the theorem
+  {}% measure of space to indent
+  {\bfseries}% name of head font
+  {:}% punctuation between head and body
+  {2ex}% space after theorem head; " " = normal interword space
+  {}% Manually specify head
+\theoremstyle{homework} 
+
+% Set up an Exercise environment and a Solution label.
+\newtheorem*{exercisecore}{Exercise \@currentlabel}
+\newenvironment{exercise}[1]
+{\def\@currentlabel{#1}\exercisecore}
+{\endexercisecore}
+
+\newcommand{\localhead}[1]{\par\smallskip\noindent\textbf{#1}\nobreak\\}%
+\newcommand\solution{\localhead{Solution:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Stuff for getting the name/document date/title across the header
+\makeatletter
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{\ifnum \value{page} > 1\relax\thepage\fi}
+\fancyhead[L]{\ifx\@doclabel\@empty\else\@doclabel\fi}
+\fancyhead[C]{\ifx\@docdate\@empty\else\@docdate\fi}
+\fancyhead[R]{\ifx\@docauthor\@empty\else\@docauthor\fi}
+\headheight 15pt
+
+\def\doclabel#1{\gdef\@doclabel{#1}}
+\doclabel{Use {\tt\textbackslash doclabel\{MY LABEL\}}.}
+\def\docdate#1{\gdef\@docdate{#1}}
+\docdate{Use {\tt\textbackslash docdate\{MY DATE\}}.}
+\def\docauthor#1{\gdef\@docauthor{#1}}
+\docauthor{Use {\tt\textbackslash docauthor\{MY NAME\}}.}
+\makeatother
+
+% Shortcuts for blackboard bold number sets (reals, integers, etc.)
+\newcommand{\Reals}{\ensuremath{\mathbb R}}
+\newcommand{\Nats}{\ensuremath{\mathbb N}}
+\newcommand{\Ints}{\ensuremath{\mathbb Z}}
+\newcommand{\Rats}{\ensuremath{\mathbb Q}}
+\newcommand{\Cplx}{\ensuremath{\mathbb C}}
+%% Some equivalents that some people may prefer.
+\let\RR\Reals
+\let\NN\Nats
+\let\II\Ints
+\let\CC\Cplx
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The main document start here.
+
+% The following commands set up the material that appears in the header.
+\doclabel{Math 410: Homework 2}
+\docauthor{Stefano Fochesatto}
+\docdate{\today}
+
+\begin{document}
+
+
+
+\section*{Exercises 1.3}
+
+\begin{exercise}{2} Show that $|z_1z_2z_3| = |z_1||z_2||z_3|$.\\
+    \solution Consider the polar form for each complex number $z_1 = r_1( \cos(\theta_1) + i \sin(\theta_1)), z_2 = r_2( \cos(\theta_2) + i \sin(\theta_2))$ and $z_3 = r_3( \cos(\theta_3) + i \sin(\theta_3))$.
+    Now consider the product of the three terms and applying equation (7) from the text, we get the following, 
+    \begin{equation*}
+        z_1z_2z_3 = r_1r_2r_3\left(\cos(\theta_1 + \theta_ 2 +\theta_3) + i \sin(\theta_1 + \theta_ 2 +\theta_3)\right).
+    \end{equation*} 
+    Thus it follows that $|z_1z_2z_3| = r_1r_2r_3 =  |z_1||z_2||z_3|$. 
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{4} Show that for any integer $k$. $|z^k| = |z|^k$ (provided that $z \neq 0$ when $k$ is negative).\\
+    \solution Suppose some complex number $z$ and let $k \in \mathbb{Z}^+$. Note that the case where $k = 0$ is trivial. Let $k = 1$ and note that, 
+    \begin{equation*}
+        |z^1| = |z| = |z|^1.
+    \end{equation*}
+    Suppose that $|z^k| = |z|^k$ for some $k$ and we will proceed by induction on $k$. Consider the term $|z^{k+1}|$ applyting the induction hypothisis we get the following, 
+    \begin{align*}
+        |z^{k + 1}| &= |z^{k}z|,\\
+        &= |z^{k}||z|,\\ 
+        &= |z|^{k}|z|,\\
+        &= |z|^{k+1}.
+    \end{align*}
+    For the  $k \in \mathbb{Z}^-$ consider the previous result and with some algebra we get the following, 
+    \begin{align*}
+        |z^{-k}| &= |\frac{1}{z^k}|,\\
+         &= \frac{1}{|z^k|},\\
+         &= \frac{1}{|z|^k},\\
+         &= |z|^{-k}.
+    \end{align*}
+\end{exercise}
+\vspace{.15in}
+
+\begin{exercise}{5} Find the following, \\
+    \begin{enumerate}
+        \item[b.] 
+        \begin{equation*}
+            |\overline{(1 + i)}(2 - 3i)(-3 + 4i)|
+        \end{equation*} 
+        \solution The result from problem (2) shows us that we can simplify with the following, 
+        \begin{equation*}
+            |\overline{(1 + i)}(2 - 3i)(-3 + 4i)| = |\overline{(1 + i)}||(2 - 3i)||(-3 + 4i)| = |(1 - i)||(2 - 3i)||(-3 + 4i)|.
+        \end{equation*}
+        Computing the moduli for each term we get the following, 
+        \begin{equation*}
+            |\overline{(1 + i)}(2 - 3i)(-3 + 4i)| = \sqrt{2}\sqrt{13}5 = 5\sqrt{26}.
+        \end{equation*} 
+        \vspace{.15in}
+        \item[c.]
+        \begin{equation*}
+            \left|\dfrac{i(2 + i)^3}{(1 - i)^2}\right|
+        \end{equation*}
+        \solution Recall equation (12) from the text ((2) from the lecture notes.) which allows us to distribute the moduli through the division. Furthermore our result from problem allows us 
+        to extract the exponents from the moduli therefore the problem is simplified to, 
+        \begin{equation*}
+            \left|\dfrac{i(2 + i)^3}{(1 - i)^2}\right| = \dfrac{|i(2 + i)^3|}{|(1 - i)^2|} = \dfrac{|i||(2 + i)|^3}{|(1 - i)|^2}. 
+        \end{equation*}
+        Computing the moduli for each term we get, 
+        \begin{equation*}
+            \left|\dfrac{i(2 + i)^3}{(1 - i)^2}\right| = \dfrac{(1)(\sqrt{5})^3}{(\sqrt{2})^2)} = \dfrac{5\sqrt{5}}{2}.
+        \end{equation*}
+        \item[d.] 
+        \begin{equation*}
+            \left|\dfrac{(\pi + i)^{100}}{(\pi - i)^{100}}\right|
+        \end{equation*}  
+        \solution Applying a similar technique to the previous problem we get the following simplified form, 
+        \begin{equation*}
+            \left|\dfrac{(\pi + i)^{100}}{(\pi - i)^{100}}\right| = \dfrac{|(\pi + i)|^{100}}{|(\pi - i)|^{100}}. 
+        \end{equation*}
+        From here it's clear to see that the solution is one since for any complex number $z$ we know that $|z| = |\overline{z}|$. 
+    \end{enumerate}
+\end{exercise}
+\vspace{.15in}
+
+
+
+
+\begin{exercise}{7} Find the argument fo each of the following complex numbers and write each in polar form. \\
+    \begin{enumerate}
+        \item[b.] $z = -3 + 3i$
+        \solution Computing the moduli we get $r = |z| = \sqrt{-3^2 + 3^2} = 3\sqrt{2}$. Computing the argument with the 
+        inverse $\tan$ formula we get the following, $\theta = tan^{-1}(\frac{3}{-3}) = \frac{3\pi}{4}$. Therefore we get the following 
+        polar form $z = 3\sqrt{2}(\cos(\frac{3\pi}{4}) + i\sin(\frac{3\pi}{4}))$. 
+        \item[e.] $z = (1 - i)(-\sqrt{3} + i)$
+        \solution Recall from equation (7) in the text that the polar form of a product of two complex numbers can be extracted by multiplying their 
+        moduli and summing their arguments. Computing the moduli by multiplying the moduli of each term in the product, $r = r_1r_2 = \sqrt(2)2$. Applying the inverse $\tan$ formula 
+        to extract the argument for each term in the product we get the following, 
+        \begin{equation*}
+            \theta_1 = \tan^{-1}(\frac{-1}{1}) = \frac{3\pi}{4}.
+        \end{equation*}
+        \begin{equation*}
+            \theta_2 = \tan^{-1}(\frac{1}{-\sqrt{3}}) = \tan^{-1}(\frac{1/2}{-\sqrt{3}/2}) = -\frac{\pi}{6}. 
+        \end{equation*}
+        Thus we get the argument for $z$ through addition, 
+        \begin{equation*}
+            \theta = \theta_1 + \theta_2 =  \frac{3\pi}{4}-\frac{\pi}{6} = \frac{7\pi}{12}.
+        \end{equation*}
+        Therefore our final polar form is, 
+        \begin{equation*}
+            z = 2\sqrt(2)(\cos( \frac{7\pi}{12}) + i\sin(\frac{7\pi}{12})).
+        \end{equation*}
+        \item[h.] $\dfrac{-\sqrt{7}(1 + i)}{\sqrt{3} + i}$. 
+        \solution Recall from equations (10), (11), and (12) we can solve this problem in a similar way to the last one. We begin by computing the 
+        moduli for each term in quotient. $r_1 = |-\sqrt{7}||1 + i| = \sqrt{7}\sqrt{2}$ and $r_2 = |\sqrt{3} + i| = 2$. By (12) we know that moduli for $z$ is the quotient of the 
+        moduli, thus $r = |z| = \frac{\sqrt{14}}{2}$. Now we compute the argument for each term in the quotient with the inverse $\tan$ formula,
+        \begin{equation*}
+            \theta_1 = \tan^{-1}(\frac{1}{1}) = \frac{\pi}{4},
+        \end{equation*}
+        \begin{equation*}
+            \theta_2 = \tan^{-1}(\frac{1}{\sqrt{3}}) = \frac{\pi}{6},
+        \end{equation*}
+        By (11) we get the argument for $z$ by subtraction, 
+        \begin{equation*}
+            \theta = \theta_1 - \theta_2 = \frac{\pi}{4} - \frac{\pi}{6} = \frac{\pi}{12}.
+        \end{equation*}
+        Therefore our final polar form is, 
+        \begin{equation*}
+            z = \frac{\sqrt{14}}{2}(\cos(\frac{\pi}{12}) + i\sin(\frac{\pi}{12}).
+        \end{equation*}
+    \end{enumerate}
+    
+\end{exercise}
+\vspace{.15in}
+
+
+
+
+\begin{exercise}{12} Find the following, 
+    \begin{enumerate}
+        \item[a.] $Arg(-6-6i)$
+        \solution Applying the inverse $\tan()$ formula we get the following, 
+        \begin{equation*}
+            Arg(-6-6i) = \tan^{-1}(\frac{-6}{-6}) = \frac{5\pi}{4}.
+        \end{equation*}   
+        \item[c.] $Arg(10i)$
+        \solution Since our complex number only point in the positive imaginary direction we know that it's argument is $\theta = \frac{\pi}{2}$.  
+    \end{enumerate}
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{13} Decide which of the following statements are always true.\\
+    \begin{enumerate}
+        \item[a.] $Arg(z_1z_2) = Arg(z_1) + Arg(z_2)$ if $z_1, z_2 \neq 0$\\
+        \solution False. Let $z_1 = z_2 = -1 + 0i$ Note that $Arg(z_1z_2) = 0 \neq Arg(z_1) + Arg(z_2) = 2\pi$.
+        \item[b.] $Arg(\overline{z}) = -Arg(z)$ if $z$ is not a real number.
+        \solution True. This is shown by equation (14) in the text.  
+        \item[c.] $Arg(z_1/z_2) = Arg(z_1) - Arg(z_2)$ if $z_1, z_2 \neq 0$\\
+        \solution False. Let $z_1 = 0 + i$ and $z_2 = 0 - i$. Note that $z_1/z_2 = -1$ so clearly $Arg(z_1/z_2) = \pi$, however we get, 
+        $ Arg(z_1) - Arg(z_2) = \frac{\pi}{2} - \frac{3\pi}{2} = -\pi$.
+        \item[d.] $arg(z) = Arg(z + 2\pi k)$ where $k \in \mathbb{Z}$ if $z \neq 0$.\\
+        \solution True. This definition is stated explicitly in the footnotes of section 1.3 after equation (5).  
+    \end{enumerate}
+\end{exercise}
+
+
+\newpage
+\section*{Exercises 1.4}
+
+\begin{exercise}{2} Write the given numbers in standard form.\\
+    \begin{enumerate}
+        \item[b.] $z = 2e^{3 + i\pi/6}$.
+        \solution Simplifying $z$ to pull the argument and moduli
+        \begin{equation*}
+            z = 2e^{3 + i\pi/6} = (2e^3)e^{i\pi/6}.
+        \end{equation*}
+        Since $\pi/6$ is the argument and the moduli is $2e^3$ we know that the standard form of $z$ looks like, 
+        $z = 2e^3(\frac{\sqrt{3}}{2} + \frac{1}{2}i) = 3e^3+ e^3i$.
+
+
+
+        \item[c.] $z = e^x$ where $x = 4e^{i\pi/3}$.
+        \solution First note that we can simplify the inner exponential(x) with the fact that the moduli is $4$ and the argument is 
+        $\pi/3$ we get the following, $x = 4(\frac{1}{2} + \frac{\sqrt{3}}{2}i) = 2 + 2\sqrt{3}i$. No we simplify the outer exponential,
+        \begin{equation*}
+            z = e^{2 + 2\sqrt{3}i} =e^2e^{2\sqrt{3}i}.
+        \end{equation*}
+        Applying the applying equation (7) to extract the components of the standard form from an argument of $2\sqrt{3}$ we get, 
+        \begin{equation*}
+            z = e^2(\cos(2\sqrt{3}) + i \sin(2\sqrt{3}))
+        \end{equation*}
+    \end{enumerate}
+    
+\end{exercise}
+\vspace{.15in}
+
+
+
+
+
+\begin{exercise}{4} Write each of the given numbers in polar form $re^{i\theta}$.\\
+    \begin{enumerate}
+        \item[b.] $z = \dfrac{2 + 2i}{-\sqrt{3} + i}$.
+        \solution  Simplifying the numerator and denominator by factoring out the moduli then using the unit circle to pull the argument we get, 
+        \begin{equation*}
+            z = \dfrac{2 + 2i}{-\sqrt{3} + i} = \dfrac{2\sqrt{2}(\frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}})i}{2(-\frac{\sqrt{3}}{2} + \frac{1}{2})i} = \dfrac{2\sqrt{2}e^{i\pi/4}}{2e^{i5\pi/6}} = \sqrt{2}e^{(i(\pi/4 - 5\pi/6))} = \sqrt{2}e^{(i(-7\pi/12))}
+        \end{equation*}
+        
+        
+        \item[c.] $z = \dfrac{2i}{3e^{4 + i}}$.\\
+        \solution Continuing in a similar fashion we get, 
+        \begin{equation*}
+            z = \dfrac{2i}{3e^{4 + i}} =\dfrac{2e^{i(\pi/2)}}{3e^{4}e^i} = \dfrac{2}{3e^4} e^{i(2\pi-1)}.  
+        \end{equation*}
+    \end{enumerate}
+    
+\end{exercise}
+\vspace{.15in}
+
+
+
+
+\begin{exercise}{5} Show that $|e^{x + iy}| = e^x$ and arg $e^{x + iy} = y + 2k\pi$ for $k \in \mathbb{Z}$.\\
+    \solution First consider that, 
+    \begin{equation*}
+        |e^{x + iy}| = |e^{x}e^{iy}| = |e^{x}||e^{iy}| 
+    \end{equation*}
+    Applying equation (7) from the text we get. 
+    \begin{equation*}
+        |e^{x + iy}| = |e^{x}||\cos(y) + i\sin(y)| = |e^{x}|(1). 
+    \end{equation*} 
+    Showing the that the set arg  $e^{x + iy} = y + 2k\pi$ for $k \in \mathbb{Z}$ first consider that the following sets are equivalent, 
+    \begin{equation*}
+        arg (e^{x + iy}) = arg (e^{iy}) 
+    \end{equation*}
+    From equation (7) we get the following, 
+    \begin{equation*}
+        arg (e^{x + iy}) = arg (cos(y) + i sin(y)) 
+    \end{equation*}
+    Computing the $arg (cos(y) + i sin(y))$ using the inverse tangent formula we get $arg (e^{x + iy}) = \tan^{-1}(\tan(y)) =  y + 2k\pi$ for $k \in \mathbb{Z}$. 
+    
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{7} Show that $e^z = e^{z + 2\pi i}$ for all $z$.\\
+    \solution By applying definition (5) to the right hand side we get the following, 
+    \begin{equation*}
+        e^{z + 2\pi i} = e^{z}(\cos(2\pi) + i \sin(2\pi)) = e^z.
+    \end{equation*}
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{8b} Show that $\overline{e^z} = e^{\overline{z}}$ for all $z$.\\
+    \solution Let $z = a + ib$ for some $a, b \in \RR$. Applying definition (5) we get the following, 
+    \begin{equation*}
+        \overline{e^z} = \overline{e^a\cos(b) + ie^a\sin(b)} =e^a\cos(b) - ie^a\sin(b). 
+    \end{equation*}
+    Recall the negative angle identities, $\sin(-\theta) = -\sin(\theta)$ and $\cos(-\theta) = \cos(\theta)$ and note that, 
+    \begin{equation*}
+        e^{\overline{z}} = e^a\cos(-b) + ie^a\sin(-b) =  e^a\cos(b) - ie^a\sin(b).
+    \end{equation*}
+    Thus it follows that $\overline{e^z} = e^{\overline{z}}$ for all $z$.
+\end{exercise}
+\vspace{.15in}
+
+
+
+\begin{exercise}{9} Show that $(e^z)^n = e^{nz}$ for any integer $n$.\\
+    \solution Suppose some complex number $z$ and let $n \in \mathbb{Z}$. Note that the case where $n = 0$ is trivial. Let $n = 1$ and 
+    note that, 
+    \begin{equation*}
+        (e^z)^{(1)} = e^{z} = e^{(1)z}. 
+    \end{equation*} 
+    Suppose that $(e^z)^n = e^{nz}$ for some $n \in \mathbb{Z}^+$. We will proceed by induction on $n$. Consider $(e^z)^{n+1}$ and note that, 
+    \begin{align*}
+        (e^z)^{n+1} &= (e^z)^{n} (e^z),\\
+         &= e^{nz} (e^z),\\ 
+         &= e^{(n+1)z}. 
+    \end{align*} 
+    For the  $n \in \mathbb{Z}^-$ consider the previous result and with some algebra we get the following, 
+    \begin{align*}
+        (e^z)^{(-1)}n &= \dfrac{1}{(e^z)^n},\\
+        &= \dfrac{1}{e^{nz}},\\
+        &= e^{(-1)nz}.
+    \end{align*}
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{10} Show that $|e^z| \leq 1$ if $Re z \leq 0$.\\
+    \solution Suppose $z = a + bi$ is a complex number with $a, b \in \RR$ such that $a \leq 0$. Consider the following, 
+    \begin{equation*}
+        |e^z| = |e^{a + bi}| = |e^a(\cos(b) + i \sin(b))| = e^a.  
+    \end{equation*}
+    By the definition of the exponential when $Re z = a \leq 0$ we know that $|e^z| = e^a \leq 1$.    
+\end{exercise}
+\vspace{.15in}
+
+
+
+\begin{exercise}{11} Determine which of the following properties of the real exponential function remain 
+    true for the complex exponential function (that is, for $x$ replaced by $z$).\\
+    \begin{enumerate}
+        \item[a.] $e^x$ is never zero.\\
+        \solution  Let $z = x + yi$, by the equation (8) we know that $e^z = e^x(\cos(y) + i\sin(y))$. Clearly 
+        $e^x > 0$, and we know that $(\cos(y) + i\sin(y)) \neq 0$ Since there is no solution to the system $\cos(y) = 0$, $\sin(y) = 0$. 
+        Thus this is true for the complex exponential function. 
+        
+        \item[b.] $e^x$ is a one-to-one function.\\
+        \solution  Consider equation (10) in the text and note that $e^{2\pi i} = e^{-2\pi i}$ thus this is false for the complex exponential function.
+        
+        \item[c.] $e^x$ is defined for all $x$.\\
+        \solution  Recall again the decomposition of $e^z$ via equation (8), $e^z = e^x(\cos(y) + i\sin(y))$. Clearly $e^x$ is well defined 
+        and trig functions are also well defined for all $x,y \in \RR$. The product of well defined functions is also well defined thus $e^z$ is well defined. 
+
+        \item[d.] $e^{-x} = 1/e^x$.\\   
+        \solution  Again recall the decomposition of $e^z$ via equation (8), note that $e^{-z} = e^{(-1)x}(\cos((-1)y) + i\sin((-1)y))$. by De Moivre's formula (16) we get 
+        the following, 
+        \begin{equation*}
+            e^{-z} = e^{(-1)x}(\cos((-1)y) + i\sin((-1)y)) = \left(e^{x}(\cos(y) + i\sin(y))\right)^{-1} = \dfrac{1}{e^z}. 
+        \end{equation*}
+    \end{enumerate}
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{12a} Use De Moivre's formula together with the binomial formula to derive $\sin(3\theta) = 3\cos^2(\theta)\sin(\theta) - \sin^3(\theta)$.\\
+    \solution Note that the following is true by De Moivre's formula. 
+    \begin{equation*}
+        \cos(3\theta) + i\sin(3\theta) = (\cos(\theta) + i\sin(\theta))^3
+    \end{equation*} 
+    Now applying the binomial formula to compute the expansion we get, 
+    \begin{align*}
+        \cos(3\theta) + i\sin(3\theta) &= (\cos(\theta) + i\sin(\theta))^3,\\
+         &= \cos^3(\theta) + 3\cos^2(\theta)\sin(\theta)i - 3\cos(\theta)\sin^2(\theta) - \sin^3(\theta)i,\\
+         &= (\cos^3(\theta) - 3\cos(\theta)\sin^2(\theta)) + (3\cos^2(\theta)\sin(\theta) - \sin^3(\theta))i.\\ 
+    \end{align*} 
+    Consider the imaginary component of both sides,
+    \begin{equation*}
+        \sin(3\theta) = 3\cos^2(\theta)\sin(\theta) - \sin^3(\theta)
+    \end{equation*}
+\end{exercise}
+\vspace{.15in}
+
+
+
+\begin{exercise}{13} Show how the following trigonometric identities follow from equations (11) and (12).\\
+    \begin{enumerate}
+        \item[a.] $\sin^2(\theta) + \cos^2(\theta) = 1$\\
+        \solution Applying equations (11) and (12) to the right hand side we get the following,
+        \begin{align*}
+            \sin^2(\theta) + \cos^2(\theta) &= \left(\dfrac{e^{i\theta} - e^{-i\theta}}{2i}\right)^2 + \left(\dfrac{e^{i\theta} + e^{-i\theta}}{2}\right)^2\\
+             &= \dfrac{(e^{i\theta} + e^{-i\theta})^2 - (e^{i\theta} - e^{-i\theta})^2}{4}\\
+             &= \dfrac{(e^{2i\theta}+2+e^{-2i\theta}) - (e^{2i\theta}-2+e^{-2i\theta})}{4}\\
+             &= \dfrac{4}{4} = 1.
+        \end{align*} 
+        \item[b.] $\cos(\theta_1 + \theta_2) = \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2)$\\ 
+        \solution Applying equation (11) to the left hand side we get, 
+        \begin{align*}
+            \cos(\theta_1 + \theta_2) &= \dfrac{e^{i(\theta_1 + \theta_2)} + e^{-i(\theta_1 + \theta_2)}}{2}\\
+            &=\dfrac{e^{i\theta_1 + i\theta_2} + e^{-i\theta_1 - i\theta_2}}{2}\\
+            &=\dfrac{e^{i\theta_1}e^{i\theta_2} + e^{-i\theta_1} e^{-i\theta_2}}{2}
+        \end{align*}
+        Applying equation (7) to the denominator we get the following, 
+        \begin{align*}
+            \cos(\theta_1 + \theta_2) &= \dfrac{e^{i\theta_1}e^{i\theta_2} + e^{-i\theta_1} e^{-i\theta_2}}{2},\\
+            &=\dfrac{((\cos(\theta_1) + i\sin(\theta_1))(\cos(\theta_2) + i\sin(\theta_2)))}{2},\\ 
+            &+ \dfrac{((\cos(-\theta_1) + i\sin(-\theta_1))(\cos(-\theta_2) + i\sin(-\theta_2)))}{2},\\
+            &= \dfrac{\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) + i\sin(\theta_1)\cos(\theta_2) + i\cos(\theta_1)\sin(\theta_2)}{2},\\
+            &+ \dfrac{\cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2) - i\sin(\theta_1)\cos(\theta_2) - i\cos(\theta_1)\sin(\theta_2)}{2},\\
+            &=  \cos(\theta_1)\cos(\theta_2) - \sin(\theta_1)\sin(\theta_2).
+        \end{align*}
+    \end{enumerate}
+\end{exercise}
+\vspace{.15in}
+
+
+\begin{exercise}{23b} Compute the following integral by using the representation (11) or (12) together with the 
+    binomial formula.
+    \begin{equation*}
+        \int_0^{2\pi} sin^6(2\theta)d\theta
+    \end{equation*}
+    \solution Applying the complex representation, 
+    \begin{equation*}
+        \int_0^{2\pi}\left(\dfrac{e^{i2\theta} - e^{-i2\theta}}{2i}\right)^6 d\theta
+    \end{equation*}
+    Applying the binomial theorem we can simplify, 
+    \begin{align*}
+        \int_0^{2\pi}\left(\dfrac{e^{i2\theta} - e^{-i2\theta}}{2i}\right)^6 d\theta &= \dfrac{1}{(2i)^6}\int_0^{2\pi}\left(e^{i2\theta} - e^{-i2\theta}\right)^6 d\theta\\
+         &= \dfrac{1}{(2i)^6}\int_0^{2\pi}\left(e^{i2\theta} - e^{-i2\theta}\right)^6 d\theta\\
+         &= \dfrac{1}{(2i)^6} \int_0^{2\pi} e^{12i\theta}-6e^{8i\theta}+15e^{4i\theta}-20+15e^{-4i\theta}-6e^{-8i\theta}+e^{-12i\theta} d\theta\\
+         &= \dfrac{1}{(2i)^6} \int_0^{2\pi} e^{12i\theta}-6e^{8i\theta}+15e^{4i\theta}-20+15e^{-4i\theta}-6e^{-8i\theta}+e^{-12i\theta} d\theta\\
+         &= \dfrac{1}{(2i)^6} \int_0^{2\pi} 2(1)\cos(12\theta)-2(6)\cos(8\theta)+2(15)\cos(4\theta) - 20\\ 
+         &+ (i\sin(12\theta)-i\sin(12\theta) + 6i\sin(8\theta) - 6i\sin(8\theta) + 15i\sin(4\theta) - 15i\sin(4\theta))d\theta\\
+         &= -\dfrac{1}{64} \int_0^{2\pi} 2\cos(12\theta)-12\cos(8\theta)+30\cos(4\theta) - 20 d\theta     
+        \end{align*}
+    Integrating each term we get, 
+    \begin{align*}
+        \int_0^{2\pi} sin^6(2\theta)d\theta &= -\dfrac{1}{64} \int_0^{2\pi} 2\cos(12\theta)-12\cos(8\theta)+30\cos(4\theta) - 20 d\theta,\\
+        &= -\dfrac{1}{64} \left[2\left(\dfrac{\sin(12\theta)}{12}\right) - 12\left(\dfrac{\sin(8\theta)}{8}\right) + 30\left(\dfrac{\sin(4\theta)}{4}\right) - 20\theta\right]_0^{2\pi},\\
+        &= -\dfrac{1}{64}(-20)(2\pi),\\
+        &= \dfrac{40\pi}{64}.
+    \end{align*}
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
