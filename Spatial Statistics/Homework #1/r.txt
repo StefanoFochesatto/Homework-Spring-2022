@@ -1,0 +1,3 @@
+> install.packages('geoR')
+> library(geoR)
+> plot(ca20)

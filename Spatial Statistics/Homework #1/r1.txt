@@ -1,0 +1,55 @@
+## Extract names of structures in ca20 object
+names(ca20)
+
+## Create New dataframe
+mydata <- data.frame(
+  x.coord = ca20$coords[,"east"],
+  y.coord = ca20$coords[,"north"],
+  ca20Data = ca20$data)
+## Create Borders Dataframe
+myborders <- data.frame(
+  xx = ca20$border[,"east"], 
+  yy = ca20$border[,"north"])
+
+## First subplot
+ggplot(mydata) +
+   geom_point(aes(x.coord,y.coord, color = ca20Data), size = 3) +
+   coord_fixed(ratio = 1) +
+   scale_color_gradient(low = "blue", high = "green") +
+   geom_path(data = myborders, aes(xx,yy)) +
+   theme_bw() # b/w background
+
+## Pull min-max for axis limits
+min(mydata$ca20Data)
+max(mydata$ca20Data)
+min(mydata$x.coord)
+max(mydata$x.coord)
+min(mydata$y.coord)
+max(mydata$y.coord)
+
+## Second subplot
+ggplot(mydata, aes(ca20Data, y.coord)) +
+   geom_point(size = 1.5, color = "blue") +
+   theme_bw() +
+   theme (axis.title = element_text(size = 18)) +
+   theme(axis.text=element_text(size=15)) +
+   xlim(20,80) +
+   ylim(4750,5850)
+  
+
+## Third subplot
+ggplot(mydata, aes(x.coord, ca20Data)) +
+  geom_point(size = 1.5, color = "blue") +
+  theme_bw() +
+  theme (axis.title = element_text(size = 18)) +
+  theme(axis.text=element_text(size=15)) +
+  ylim(20,80) +
+  xlim(4800,6000)
+
+## Fourth subplot
+hist(mydata$ca20Data, prob=TRUE, main="", 
+     xlab="ca20", col="deepskyblue")
+rug(mydata$ca20Data, side = 1, col = "blue")
+lines(density(mydata$ca20Data), col = 'red', lwd = 2)
+
+
