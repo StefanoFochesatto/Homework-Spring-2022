@@ -1,0 +1,10 @@
+hh <- seq( 0,13, length=200 )
+curve( 8 - 5*exp(-x^2/16), xlab="lag h", 
+        ylab=expression(paste(gamma, "(h)")),
+        from=0.0, to=10, ylim = c(0, 9))
+        
+abline( v = 0 ) # include y-axis on the plot
+abline( h = 0 ) # include x-axis on the plot
+points(0, 3)
+points(0, 0, pch = 16)
+

@@ -1,0 +1,20 @@
+> LinearModel <- lm(y ~ lons + lats)
+> summary(LinearModel)
+
+Call:
+lm(formula = y ~ lons + lats)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.6062 -1.2721 -0.2853  1.2536  3.0766 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -153.67616    4.47966  -34.30   <2e-16 ***
+lons           1.25420    0.03443   36.43   <2e-16 ***
+lats           1.45169    0.06947   20.90   <2e-16 ***
+---
+
+Residual standard error: 1.636 on 57 degrees of freedom
+Multiple R-squared:  0.9681,	Adjusted R-squared:  0.967 
+F-statistic: 864.7 on 2 and 57 DF,  p-value: < 2.2e-16
