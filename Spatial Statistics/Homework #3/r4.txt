@@ -1,0 +1,11 @@
+> eyefit(robust_est)
+    cov.model sigmasq  phi tausq kappa kappa2    practicalRange
+1 exponential    2.42 0.15   1.1  <NA>   <NA> 0.449362704023068
+
+> eyefit(robust_est)
+  cov.model sigmasq  phi tausq kappa kappa2    practicalRange
+1  gaussian    2.42 0.23   1.1  <NA>   <NA> 0.398089900877426
+
+> eyefit(robust_est)
+  cov.model sigmasq  phi tausq kappa kappa2 practicalRange
+1 spherical    2.64 0.98  0.99  <NA>   <NA>           0.98

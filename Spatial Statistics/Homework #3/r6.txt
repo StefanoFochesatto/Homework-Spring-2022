@@ -1,0 +1,20 @@
+%Using Initial Values from WLS Fit
+ini_sigsq <- my_WLS_fit$cov.pars[1]
+ini_phi <- my_WLS_fit$cov.pars[2]
+ini_tausq <- my_WLS_fit$nugget
+
+%Calling likfit() for the maximum liklehood estimtar
+my_ML_fit <- likfit( geo.scallops , trend="2nd",
+                     ini.cov.pars=c(ini_sigsq,ini_phi),
+                     nugget=ini_tausq, lik.method="ML")
+
+
+%Printing the results
+print(c(my_ML_fit$sigmasq, my_ML_fit$phi, my_ML_fit$tausq))
+[1] sigamasq = 3.60472588 phi = 0.13487626 tausq = 0.03059721
+
+
+%Plotting the results
+plot(robust_est, main="", cex.lab=1.6, cex.axis=1.5, cex.main=1.5 )
+lines(my_WLS_fit, lty = 2)   
+lines(my_ML_fit)     

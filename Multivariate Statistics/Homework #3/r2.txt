@@ -1,0 +1,45 @@
+group1 <- data.frame(group1)
+group2 <- data.frame(group2)
+____________________________________________________________________
+> t.test(group1$G1, group2$G2)
+
+	Welch Two Sample t-test
+
+data:  group1$G1 and group2$G2
+t = -2.9038, df = 37.703, p-value = 0.006132
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.0920142 -0.9079858
+sample estimates:
+mean of x mean of y 
+     14.6      17.6 
+
+
+____________________________________________________________________
+> t.test(group1$H1, group2$H2)
+
+	Welch Two Sample t-test
+
+data:  group1$H1 and group2$H2
+t = -2.0043, df = 33.745, p-value = 0.05312
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -6.14338425  0.04338425
+sample estimates:
+mean of x mean of y 
+    25.25     28.30 
+
+____________________________________________________________________
+> t.test(group1$J1, group2$J2)
+
+	Welch Two Sample t-test
+
+data:  group1$J1 and group2$J2
+t = 2.9147, df = 36.037, p-value = 0.006085
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  1.794887 10.005113
+sample estimates:
+mean of x mean of y 
+     45.6      39.7 
+____________________________________________________________________

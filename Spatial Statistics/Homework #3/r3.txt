@@ -1,0 +1,51 @@
+> scallops$clons <- scallops$long - mean(scallops$long)
+> scallops$clats <- scallops$lat - mean(scallops$lat)
+> myfit <- lm( logcatch ~ clons+clats + I(clons^2) +
+              I(clats^2) + I(clats*clons), data=scallops )
+> summary(myfit)
+
+Call:
+lm(formula = logcatch ~ clons + clats + I(clons^2) + I(clats^2) + 
+    I(clats * clons), data = scallops)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5381 -1.2812 -0.0044  1.2508  4.9780 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        4.4198     0.2520  17.541  < 2e-16 ***
+clons             -0.9275     0.5419  -1.712 0.089139 .  
+clats             -0.1321     0.4550  -0.290 0.771917    
+I(clons^2)        -5.0811     0.8023  -6.333 2.97e-09 ***
+I(clats^2)        -3.8192     0.9868  -3.870 0.000165 ***
+I(clats * clons)   7.9139     1.5812   5.005 1.63e-06 ***
+
+Residual standard error: 1.884 on 142 degrees of freedom
+Multiple R-squared:  0.2739,	Adjusted R-squared:  0.2484 
+F-statistic: 10.71 on 5 and 142 DF,  p-value: 9.425e-09
+__________________________________________________________________________________
+> myfit1 <- lm( logcatch ~ clons + clats, data=scallops ) 
+> myfit2 <- lm( logcatch ~ clons+clats + I(clons^2) + I(clats^2), data=scallops )
+
+
+> anova(myfit1, myfit2)
+Analysis of Variance Table
+
+Model 1: logcatch ~ clons + clats
+Model 2: logcatch ~ clons + clats + I(clons^2) + I(clats^2)
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)    
+1    145 653.72                                  
+2    143 592.72  2    60.994 7.3577 0.0009089 ***
+__________________________________________________________________________________
+
+> anova(myfit2, myfit)
+Analysis of Variance Table
+
+Model 1: logcatch ~ clons + clats + I(clons^2) + I(clats^2)
+Model 2: logcatch ~ clons + clats + I(clons^2) + I(clats^2) + I(clats * 
+    clons)
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)    
+1    143 592.72                                  
+2    142 503.84  1    88.884 25.051 1.628e-06 ***
+__________________________________________________________________________________

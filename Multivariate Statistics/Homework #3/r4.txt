@@ -1,0 +1,44 @@
+> summary(lm(Y[,1] ~ X))
+
+Call:
+lm(formula = Y[, 1] ~ X)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-81.893 -18.562   9.231  19.792  62.881 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1947.36929   13.23211 147.170   <2e-16 ***
+Xx1            6.90672    3.79740   1.819   0.0877 .  
+Xx2            0.77170    0.30818   2.504   0.0235 *  
+Xx3           -0.01249    0.05889  -0.212   0.8347    
+---
+
+Residual standard error: 39.12 on 16 degrees of freedom
+Multiple R-squared:  0.6312,	Adjusted R-squared:  0.562 
+F-statistic: 9.127 on 3 and 16 DF,  p-value: 0.000937
+
+
+
+_____________________________________________________________
+> summary(lm(Y[,2] ~ X))
+
+Call:
+lm(formula = Y[, 2] ~ X)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-51.245 -13.627  -0.435  15.323  75.958 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 925.51452   10.39014  89.076  < 2e-16 ***
+Xx1           3.81656    2.98180   1.280 0.218810    
+Xx2           1.20569    0.24199   4.982 0.000136 ***
+Xx3          -0.04227    0.04624  -0.914 0.374242    
+---
+
+Residual standard error: 30.72 on 16 degrees of freedom
+Multiple R-squared:  0.6476,	Adjusted R-squared:  0.5816 
+F-statistic: 9.803 on 3 and 16 DF,  p-value: 0.0006572

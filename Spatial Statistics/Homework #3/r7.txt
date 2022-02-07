@@ -1,0 +1,11 @@
+my_REML_fit <- likfit( geo.scallops , trend="2nd",
+                     ini.cov.pars=c(ini_sigsq,ini_phi),
+                     nugget=ini_tausq, lik.method="REML")
+
+print(c(my_REML_fit$sigmasq, my_REML_fit$phi, my_REML_fit$tausq))
+[1] sigmasq = 5.8967643 phi = 0.2951893 tausq = 0.2380306
+
+plot(robust_est, main="", cex.lab=1.6, cex.axis=1.5, cex.main=1.5,  ylim = c(0, 7))
+lines(my_WLS_fit, lty = 2)   
+lines(my_ML_fit)     
+lines(my_REML_fit, lty = 3)

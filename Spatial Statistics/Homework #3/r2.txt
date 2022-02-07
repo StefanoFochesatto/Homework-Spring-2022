@@ -1,0 +1,5 @@
+> scallops$logcatch <- log( 1 + scallops$tcatch)
+
+> summary(scallops$logcatch)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   2.197   3.434   3.483   4.756   8.866 

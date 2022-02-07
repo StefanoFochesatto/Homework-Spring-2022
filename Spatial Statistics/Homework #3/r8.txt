@@ -1,0 +1,8 @@
+sigsq <- 1.5
+phi <- 10.0
+
+tmp <- grf(25, grid="irreg",
+           xlims=c(70,110), ylims=c(20,50),
+           cov.model = "exponential",
+           cov.pars = c(sigsq,phi) )
+mydata <- as.geodata( cbind( tmp$coords,tmp$data) )

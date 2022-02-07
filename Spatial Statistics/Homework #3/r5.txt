@@ -1,0 +1,15 @@
+> my_WLS_fit <- variofit( robust_est,
+                         ini.cov.pars=c(2.42,.23),
+                         cov.model="gaussian",
+                         max.dist=3)
+variofit: covariance model used is gaussian 
+variofit: weights used: npairs 
+variofit: minimisation function used: optim 
+
+> my_WLS_fit$cov.pars; my_WLS_fit$nugget
+[1] sigamsq = 2.9763894   phi = 0.1256335
+[1] tausq = 0.6073302
+
+
+> plot(robust_est, main="", cex.lab=1.6, cex.axis=1.5, cex.main=1.5 )
+> lines(my_WLS_fit)    

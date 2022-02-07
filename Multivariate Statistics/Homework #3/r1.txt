@@ -1,0 +1,11 @@
+> library(ICSNP)
+Loading required package: mvtnorm
+Loading required package: ICS
+
+> HotellingsT2(group1, group2)
+
+	Hotelling's two sample T2-test
+
+data:  group1 and group2
+T.2 = 6.3084, df1 = 3, df2 = 36, p-value = 0.001498
+alternative hypothesis: true location difference is not equal to c(0,0,0)

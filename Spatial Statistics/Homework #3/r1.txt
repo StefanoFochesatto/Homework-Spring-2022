@@ -1,0 +1,24 @@
+> scallops <- read.table("scallops.txt", header=TRUE)
+_________________________________________________________________________
+
+> names(scallops)
+[1] "strata"   "sample"   "lat"      "long"     "tcatch"   "prerec"  
+[7] "recruits" "lgcatch" 
+_________________________________________________________________________
+> summary(scallops)
+     strata         sample           lat             long       
+ Min.   :6220   Min.   :  1.0   Min.   :38.60   Min.   :-73.70  
+ 1st Qu.:6260   1st Qu.:106.8   1st Qu.:39.46   1st Qu.:-73.14  
+ Median :6290   Median :147.0   Median :39.98   Median :-72.74  
+ Mean   :6288   Mean   :131.8   Mean   :39.91   Mean   :-72.72  
+ 3rd Qu.:6310   3rd Qu.:185.2   3rd Qu.:40.41   3rd Qu.:-72.31  
+ Max.   :6350   Max.   :224.0   Max.   :40.92   Max.   :-71.52  
+
+
+     tcatch           prerec           recruits          lgcatch     
+ Min.   :   0.0   Min.   :   0.00   Min.   :   0.00   Min.   :0.000  
+ 1st Qu.:   8.0   1st Qu.:   1.00   1st Qu.:   5.00   1st Qu.:2.197  
+ Median :  30.0   Median :   8.00   Median :  21.50   Median :3.434  
+ Mean   : 274.6   Mean   : 156.55   Mean   : 118.06   Mean   :3.483  
+ 3rd Qu.: 115.2   3rd Qu.:  48.25   3rd Qu.:  73.75   3rd Qu.:4.756  
+ Max.   :7084.0   Max.   :4487.00   Max.   :2597.00   Max.   :8.866  
