@@ -92,13 +92,11 @@
 
 \title{Decision Tree Learning from Scratch}
 
-\subtitle{{The Power of Ensembles}}
-
 \author{Stefano Fochesatto}
 
 \institute[UAF]{MATH 692 Mathematics for Machine Learning}
 
-\date[Spring 2022]{Date TBD}
+\date[Spring 2022]{2/10/2022}
 
 %\titlegraphic{\begin{picture}(0,0)
 %    \put(0,180){\makebox(0,0)[rt]{\includegraphics[width=4cm]{figs/software.png}}}
@@ -124,6 +122,27 @@
   \maketitle
 \end{frame}
 
+\begin{frame}{Presentation Outline}
+  \begin{itemize}
+  \item What is a Decision Tree?
+  \vfill
+  \item Motivations and Prevalence.
+  \vfill
+  \item Training the Tree.
+  \vfill
+  \item Advantages and Pitfalls.
+  \vfill
+  \item Code Demo.
+  \vfill
+  \item Application in Ensemble Models.
+  \end{itemize}
+\end{frame}
+
+
+
+
+
+
 
 \begin{frame}{What is Decision Tree Learning?}
     \begin{columns}[T]
@@ -131,9 +150,10 @@
         \begin{center}
         \begin{itemize}
             \item Supervised Learning.  
-            \item A Flowchart where internal nodes represent a test for the data.
-            \item Leaf nodes apply classification label and or regression.
-            \item Recursive Binary Partitioning $\to$ Binary Trees 
+            \item A flowchart where internal nodes represent a test for the data.
+            \item Leaf nodes apply classification label or regression.
+            \item Derived from recursive partitioning. 
+            \item We will discuss classification mainly, 
         \end{itemize}
       \end{center}
       \end{column}
@@ -162,12 +182,126 @@
   \end{frame}
 
 
+  
+  \begin{frame}{Training the Tree.}
+    \begin{itemize}
+    \item Methods don't guarantee the optimal solution (Greedy). 
+    \vfill
+    \item Top-Down Induction of Decision Trees (R.Quinlan)
+    \vfill
+    \item There are several algorithms for training.
+      \begin{itemize}
+        \item CART (L.Breimann)
+        \item ID3 and C4.5 (R.Quinlan)
+        \item C5.0 (R.Quinlan)
+      \end{itemize}
+    \end{itemize}
 
-
+  \end{frame}
 
   
+  \begin{frame}{Information Theory}
+    \begin{itemize}
+      \item Consider the following splits,
+      \begin{columns}[T]
+        \begin{column}{.45\textwidth}
+          \begin{figure}
+            \vspace*{\fill}
+            \begin{center}
+          \includegraphics[width=.85\textwidth]{HighEntropy.png}
+        \caption{Example Split \# 1}
+            \end{center}
+            \vspace*{\fill}
+          \end{figure}
+        \end{column}
+        \begin{column}{.45\textwidth}
+              \begin{figure}
+                \vspace*{\fill}
+                \begin{center}
+              \includegraphics[width=.85\textwidth]{LowEntropy.png}
+            \caption{Example Split \# 2}
+                \end{center}
+                \vspace*{\fill}
+              \end{figure}
+            \end{column}
+      \end{columns}
+      \item To optimize our tree we need to be able to quantify the quality of a split (or generalized state)?
+    \end{itemize}  
+  \end{frame}
 
 
+  \begin{frame}{Information Theory}
+    \begin{itemize}
+      \item Let $X$(observation) be a discrete random variable with $n$(classes) possible outcomes and pmf p(x)(prob distribution at node).
+      \vfill
+      \item In information theory, the unit of information ascribed to an outcome $x \in n$ is a log measure of 1/p(x),
+      \begin{equation*}
+        I = \log\left(\frac{1}{p(x)}\right) = -\log(p(x)).
+      \end{equation*} 
+      \vfill
+      \item Events that are rare have more information, events that are common have less information. 
+    \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Information Theory}
+    \begin{itemize}
+      \item We want to know the expected information at a node over all outcomes (classification classes), 
+      \begin{equation*}
+        \mathbb{E}(I) = \sum_{i = 1}^n p(i) \log_2\left(\frac{1}{p(i)}\right) = -\sum_{i = 1}^n p(i)\log_2(p(i)).
+      \end{equation*}
+      \vfill
+      \item We want to find the split which maximizes $\Delta I$ or information gain, 
+      \begin{equation*}
+        \Delta I = \mathbb{E}(I)_{Parent} - \sum w(i) \mathbb{E}(I)_{Children}.  
+      \end{equation*}
+      \item Where $w(i)$ is the size of the child node relative to the parent node. 
+      \vfill
+      \item Sometimes we only care about the difference between splits. 
+      \begin{equation*}
+        \Delta I = 1 - \sum w(i) \mathbb{E}(I)_{Children}.  
+      \end{equation*}
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame}{Training the Tree}
+    \begin{itemize}
+    \item For the CART algorithm the Gini Impurity is used to evaluate the quality of a node, 
+    \begin{equation*}
+      Gini = 1 - \sum_{i = 1}^n p(i)^2.
+    \end{equation*}
+    \item Again evaluating a split we take a weighted sum, 
+    \begin{equation*}
+      Gini_{split} = \sum Gini_{children}.
+    \end{equation*}
+    \item Both methods are largely the same, Gini is preferred for predictive performance and computational complexity. 
+  \end{itemize}
+  \end{frame}
+
+  \begin{frame}{Training the Tree}
+  \begin{itemize}
+     \item BuildTree(node);
+     \begin{itemize}
+       \item if statement for stopping criteria;
+       \item Best\_gini = gini(node.observations)
+       \item Best\_feature
+       \item Best\_threshold
+       \item loop through features;
+       \begin{itemize}
+         \item sort all observations by current feature;
+         \item loop through observations;
+         \begin{itemize}
+           \item left\_gini = gini(node.observations[1:i])
+           \item right\_gini = gini(node.observations[i+1:n])
+           \item split\_gini = (i/n)left\_gini + ((i+1 - n)/n)right\_gini
+           \item if split\_gini < Best\_gini; Best\_Gini = split\_gini; Best\_feature = j; Best\_threshold = i
+         \end{itemize}  
+       \end{itemize}
+       \item BuildTree(node.left)
+       \item BuildTree(node.right)
+      \end{itemize}
+    \end{itemize}
+  \end{frame}
 
 
 
