@@ -1,0 +1,38 @@
+
+## AIC Table
+AIC(ML_exponential)
+AIC(ML_gaussian)
+AIC(ML_spherical)
+
+plot(robust_vario)
+lines(ML_exponential, col = 'blue')
+lines(WLS_exponential)
+legend(x = 0, y = 8000, legend = c('ML', 'WLS'), 
+       col = c('blue', 'black'), 
+       lty=1, cex=0.8)
+
+####### Summary Report for ML Exponential Model. 
+> summary(ML_exponential)
+Summary of the parameter estimation
+-----------------------------------
+Estimation method: maximum likelihood 
+
+Parameters of the mean component (trend):
+   beta0    beta1    beta2    beta3    beta4    beta5 
+617.2769  -1.1527  -1.3063   0.0010  -0.0027   0.0024 
+
+Parameters of the spatial component:
+   correlation function: exponential
+      (estimated) variance parameter sigmasq (partial sill) =  2869
+      (estimated) cor. fct. parameter phi (range parameter)  =  21.23
+   anisotropy parameters:
+      (fixed) anisotropy angle = 0  ( 0 degrees )
+      (fixed) anisotropy ratio = 1
+
+Parameter of the error component:
+      (estimated) nugget =  519.7
+
+Transformation parameter:
+      (fixed) Box-Cox parameter = 1 (no transformation)
+
+Practical Range with cor=0.05 for asymptotic range: 63.59205

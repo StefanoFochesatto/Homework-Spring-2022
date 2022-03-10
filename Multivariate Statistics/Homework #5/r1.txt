@@ -1,0 +1,57 @@
+## Scaling each variable to mean = 0 sd = 1
+data_mat_scale <- scale(data_mat)
+
+## Computing the distance matrices for each group. 
+Y <- dist(data_mat_scale[,1:3], method="euclidean", diag=TRUE, upper=TRUE)
+X <- dist(data_mat_scale[,4:7], method="euclidean", diag=TRUE, upper=TRUE)
+
+## Computing the test statistic for the our given data. 
+T <- cor(cbind(as.vector(Y), as.vector(X)))[1,2]
+    [1] 0.468862
+
+
+
+## Computing the mantel test, generating approx. 
+## null dist. histogram and computing test statistic. 
+Nsim <- 5000
+null_dist <- rep(NA,Nsim)
+Y <- data_mat[,1:3]
+
+
+for(i in 1:Nsim){
+  #Finding a permutation of the 20 observations in dat_mat_scale
+  ind <- sample(1:20, size=20, replace=FALSE) 
+  #Applying permutation to Y 
+  Y_rand <- Y[ind,] 
+  #Computing permuted distance
+  Y_rand_dist <- dist(Y_rand, method="", diag=TRUE, upper=TRUE)
+  #Computing test statistic with permuted Y dist matrix 
+  null_dist[i] = cor(cbind(as.vector(X), as.vector(Y_rand_dist)))[1,2] 
+}
+
+hist(null_dist, n=40, xlim=c(-0.4,1.0)) # Plotting null dist. 
+## Computing P-value
+p_value <- mean((null_dist< -abs(T))|(null_dist> abs(T)))
+    [1] 2e-04
+
+
+
+## Double checking with mantel test in Vegan library
+## Also using the Bray-Curtis distance for the count data 
+## instead. 
+load(vegan)
+Ymantel <- vegdist(data_mat[,1:3], method = 'bray')
+Xmantel <- vegdist(data_mat_scale[,4:7], method = 'euclidean')
+
+mantel(Xmantel, Ymantel, method = 'pearson', permutations = 5000)
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = Xmantel, ydis = Ymantel, method = "pearson", permutations = 5000) 
+Mantel statistic r: 0.4251 
+      Significance: 0.0009998 
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.164 0.210 0.254 0.303 
+Permutation: free
+Number of permutations: 5000

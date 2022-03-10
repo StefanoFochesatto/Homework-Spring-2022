@@ -1,0 +1,5 @@
+> wolfcamp$borders <- get.borders(
+                      cbind(wolfcamp$coords[,1],wolfcamp$coords[,2]), 
+                      concavity_param = 3, frac = 15)
+> plot(wolfcamp)
+> ? wolfcamp

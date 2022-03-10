@@ -1,0 +1,254 @@
+> myModel1 <- '    
++   #regressions
++   GPAreq ~ IQ + EdMot
++   GPAelec ~ IQ + EdMot
++   SAT ~ IQ + EdMot
++ '
+> fit1 <- sem(myModel1, sample.cov = M, sample.nobs = 150)
+> summary(fit1, fit.measures=TRUE)
+lavaan 0.6-10 ended normally after 40 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        12
+                                                      
+  Number of observations                           150
+                                                      
+Model Test User Model:
+                                                      
+  Test statistic                                 0.000
+  Degrees of freedom                                 0
+
+Model Test Baseline Model:
+
+  Test statistic                               461.731
+  Degrees of freedom                                 9
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)               -635.396
+  Loglikelihood unrestricted model (H1)       -635.396
+                                                      
+  Akaike (AIC)                                1294.791
+  Bayesian (BIC)                              1330.919
+  Sample-size adjusted Bayesian (BIC)         1292.941
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.000
+  P-value RMSEA <= 0.05                             NA
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.000
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)
+  GPAreq ~                                            
+    IQ                0.032    0.018    1.799    0.072
+    EdMot             0.181    0.035    5.142    0.000
+  GPAelec ~                                           
+    IQ                0.159    0.014   11.284    0.000
+    EdMot             0.239    0.028    8.652    0.000
+  SAT ~                                               
+    IQ                0.280    0.143    1.951    0.051
+    EdMot             2.335    0.281    8.309    0.000
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+ .GPAreq ~~                                           
+   .GPAelec           0.294    0.039    7.465    0.000
+   .SAT               2.688    0.386    6.957    0.000
+ .GPAelec ~~                                          
+   .SAT               1.438    0.276    5.210    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+   .GPAreq            0.487    0.056    8.660    0.000
+   .GPAelec           0.300    0.035    8.660    0.000
+   .SAT              31.168    3.599    8.660    0.000
+
+_________________________________________________________________
+
+> myModel2 <- '    
++   IQ ~ GPAreq + GPAelec + SAT
++   EdMot ~ GPAreq + GPAelec + SAT
++ '
+> fit2 <- sem(myModel2, sample.cov = M, sample.nobs = 150)
+> summary(fit2, fit.measures=TRUE)
+lavaan 0.6-10 ended normally after 17 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                         9
+                                                      
+  Number of observations                           150
+                                                      
+Model Test User Model:
+                                                      
+  Test statistic                                 0.000
+  Degrees of freedom                                 0
+
+Model Test Baseline Model:
+
+  Test statistic                               224.880
+  Degrees of freedom                                 7
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)               -560.704
+  Loglikelihood unrestricted model (H1)       -560.704
+                                                      
+  Akaike (AIC)                                1139.409
+  Bayesian (BIC)                              1166.504
+  Sample-size adjusted Bayesian (BIC)         1138.021
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.000
+  P-value RMSEA <= 0.05                             NA
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.000
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)
+  IQ ~                                                
+    GPAreq           -2.387    0.393   -6.067    0.000
+    GPAelec           3.917    0.289   13.537    0.000
+    SAT              -0.012    0.038   -0.315    0.753
+  EdMot ~                                             
+    GPAreq           -0.653    0.237   -2.751    0.006
+    GPAelec           0.733    0.174    4.201    0.000
+    SAT               0.134    0.023    5.786    0.000
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+ .IQ ~~                                               
+   .EdMot            -1.026    0.233   -4.399    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+   .IQ                4.421    0.510    8.660    0.000
+   .EdMot             1.607    0.186    8.660    0.000
+
+
+_________________________________________________________________
+
+> myModel3 <- '    
++   IQ ~ GPAreq + GPAelec
++   EdMot ~ GPAreq + GPAelec
++   SAT ~ GPAreq + GPAelec
++ '
+> fit3 <- sem(myModel3, sample.cov = M, sample.nobs = 150)
+> summary(fit3, fit.measures=TRUE)
+lavaan 0.6-10 ended normally after 26 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        12
+                                                      
+  Number of observations                           150
+                                                      
+Model Test User Model:
+                                                      
+  Test statistic                                 0.000
+  Degrees of freedom                                 0
+
+Model Test Baseline Model:
+
+  Test statistic                               352.874
+  Degrees of freedom                                 9
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)               -998.534
+  Loglikelihood unrestricted model (H1)       -998.534
+                                                      
+  Akaike (AIC)                                2021.067
+  Bayesian (BIC)                              2057.195
+  Sample-size adjusted Bayesian (BIC)         2019.217
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.000
+  P-value RMSEA <= 0.05                             NA
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.000
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(>|z|)
+  IQ ~                                                
+    GPAreq           -2.458    0.323   -7.610    0.000
+    GPAelec           3.905    0.287   13.621    0.000
+  EdMot ~                                             
+    GPAreq            0.132    0.215    0.612    0.541
+    GPAelec           0.873    0.191    4.569    0.000
+  SAT ~                                               
+    GPAreq            5.869    0.688    8.528    0.000
+    GPAelec           1.050    0.611    1.718    0.086
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+ .IQ ~~                                               
+   .EdMot            -1.058    0.256   -4.137    0.000
+   .SAT              -0.243    0.770   -0.315    0.753
+ .EdMot ~~                                            
+   .SAT               2.684    0.558    4.811    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)
+   .IQ                4.424    0.511    8.660    0.000
+   .EdMot             1.966    0.227    8.660    0.000
+   .SAT              20.082    2.319    8.660    0.000
+_________________________________________________________________
+> AIC(fit1, fit2, fit3)
+     df      AIC
+fit1 12 1294.791
+fit2  9 1139.409
+fit3 12 2021.067

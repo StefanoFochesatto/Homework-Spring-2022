@@ -1,0 +1,12 @@
+CMD <- cmdscale(as.dist(D), k = 2)
+
+CMDGOF <- cmdscale(as.dist(D), list=TRUE, k = 2)$GOF
+    [1] 0.5939294 0.5942756
+
+cmdscale(as.dist(D), list=TRUE, k = 3)$GOF
+    [1] 0.7328829 0.7333100
+
+plot(MDS, pch=19, xlim = c(-.20, .20), ylim = c(.10, -.25))
+text(MDS[,1]-.03, MDS[,2]-.02, rownames(D), cex=.6)
+
+scatter3d(x = CMD[,1], y = CMD[,2], z = CMD[,3], surface = FALSE)

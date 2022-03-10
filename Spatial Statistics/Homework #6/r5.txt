@@ -1,0 +1,27 @@
+# Generate Second Order Model
+secondOrder <- lm(WolfData ~ lat + lon + I(lat^2) + I(lon^2) + I(lon*lat))
+
+# New geodata object with residuals of 2nd order model
+WolfcampRes <- as.geodata(cbind(wolfcamp$coords[,1], 
+                                wolfcamp$coords[,2], 
+                                secondOrder$residuals))
+
+# Consider empirical semivariogram with original spatial order
+orig_vario <- variog(WolfcampRes, trend="cte", estimator.type="modulus" )
+lines(orig_vario, col = 'red', lwd=3 )
+
+# Conducting randomization test
+n <- length(wolfcamp$data)
+for( i in 1:100) {
+  # Sample a permutation 
+  new.order <- sample(1:n, size=n, replace=FALSE )
+  # Generate Reordered data
+  reordered <- WolfcampRes$data[new.order]
+  reordered.geodata <- as.geodata(
+    cbind(WolfcampRes$coords,reordered))
+  # Generate reordered semivariogram
+  reordered_vario <- variog(reordered.geodata,
+                       trend="cte", estimator.type="modulus" )
+  # Plot reordered semivariograms
+  lines(reordered_vario, col="gray")
+}

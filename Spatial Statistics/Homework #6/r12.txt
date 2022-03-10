@@ -1,0 +1,4 @@
+> summary(mcmc(my_bayes_results$posterior$sample))
+> summary(mcmc(my_bayes_results$posterior$sample, start = 100))
+> effectiveSize(mcmc(my_bayes_results$posterior$sample))
+> effectiveSize(mcmc(my_bayes_results$posterior$sample, start = 100))

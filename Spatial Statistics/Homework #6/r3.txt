@@ -1,0 +1,46 @@
+############## Box-Cox Power Analysis
+> WolfData <- wolfcamp$data
+> lon <- wolfcamp$coords[,1]
+> lat <- wolfcamp$coords[,2]
+
+## This tell's that we should consider a root transform on the data.
+> summary(powerTransform(lm(WolfData ~ lat + lon )))
+bcPower Transformation to Normality 
+   Est Power Rounded Pwr Wald Lwr Bnd Wald Upr Bnd
+Y1    0.5064         0.5       0.1132       0.8996
+
+## The second order model says leave it alone. 
+> summary(powerTransform(lm(WolfData ~ lat + lon + 
+                            I(lat^2) + I(lon^2) + 
+                            I(lon*lat))))
+   Est Power Rounded Pwr Wald Lwr Bnd Wald Upr Bnd
+Y1    0.5932           1       0.1296       1.0569
+
+
+## Shapiro-Wilks test of normality. 
+> shapiro.test(wolfcamp$data)
+
+	Shapiro-Wilk normality test
+
+data:  wolfcamp$data
+W = 0.94696, p-value = 0.001586
+
+> shapiro.test(sqrt(wolfcamp$data))
+
+	Shapiro-Wilk normality test
+
+data:  sqrt(wolfcamp$data)
+W = 0.96266, p-value = 0.01468
+
+> shapiro.test(log(wolfcamp$data))
+
+	Shapiro-Wilk normality test
+
+data:  log(wolfcamp$data)
+W = 0.96761, p-value = 0.03101
+
+
+## Generating qq-norm plots to compare. 
+> qqPlot(wolfcamp$data)
+> qqPlot(sqrt(wolfcamp$data))
+> qqPlot(log(wolfcamp$data))

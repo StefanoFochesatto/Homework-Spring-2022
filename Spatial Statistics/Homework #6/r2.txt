@@ -1,0 +1,3 @@
+> wolfcampLog <- wolfcamp
+> wolfcampLog$data <- log(wolfcampLog$data) 
+> plot(wolfcampLog)

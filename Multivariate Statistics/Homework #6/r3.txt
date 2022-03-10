@@ -1,0 +1,48 @@
+> summary(PCAout)
+Importance of components:
+                         Comp.1    Comp.2    Comp.3     Comp.4     Comp.5
+Standard deviation     2.109532 1.5167763 1.4306648 1.22197267 1.21023194
+Proportion of Variance 0.234217 0.1210848 0.1077264 0.07859038 0.07708744
+Cumulative Proportion  0.234217 0.3553018 0.4630282 0.54161858 0.61870601
+
+
+                           Comp.6     Comp.7     Comp.8     Comp.9    Comp.10
+Standard deviation     1.08320125 0.96211091 0.92438319 0.86923383 0.80643962
+Proportion of Variance 0.06175394 0.04871881 0.04497286 0.03976671 0.03422868
+Cumulative Proportion  0.68045996 0.72917877 0.77415163 0.81391834 0.84814701
+
+
+                          Comp.11    Comp.12   Comp.13    Comp.14    Comp.15 
+Standard deviation     0.75520074 0.68643519 0.6613945 0.62964684 0.57675458 
+Proportion of Variance 0.03001727 0.02479965 0.0230233 0.02086606 0.01750768 
+Cumulative Proportion  0.87816428 0.90296393 0.9259872 0.94685329 0.96436097 
+
+
+                          Comp.16    Comp.17     Comp.18     Comp.19
+Standard deviation     0.49299528 0.44332640 0.403017189 0.274109644
+Proportion of Variance 0.01279181 0.01034412 0.008548571 0.003954531
+Cumulative Proportion  0.97715278 0.98749690 0.996045469 1.000000000
+
+
+PCAout$loadings
+Loadings:
+                       Comp.1 Comp.2 Comp.3 Comp.4 ... Comp.19
+ff.thickness            0.318  0.212         0.137 
+bulk.density           -0.145         0.195  0.345 
+soil.mass               0.186  0.297  0.313 -0.167 
+ph.h2o                 -0.168        -0.188  0.240 
+ph.cacl2               -0.320                0.224 
+c                       0.415 -0.174 -0.135        
+n                       0.333 -0.275 -0.190  0.146 
+om                      0.405 -0.207 -0.127        
+p                             -0.430         0.268 
+nh4                           -0.168 -0.314 -0.306 
+no3                                  -0.406 -0.177 
+n.min                  -0.151 -0.127         0.512 
+nitr                           0.160  0.355  0.168 
+cec                     0.140         0.200 -0.169 
+ca                     -0.195 -0.364  0.219        
+mg                            -0.389  0.375 -0.107 
+k                             -0.385  0.337 -0.163 
+soil.moisture           0.339  0.138         0.132 
+soil.moisture.capacity  0.231         0.116  0.356 

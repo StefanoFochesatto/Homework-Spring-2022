@@ -1,0 +1,63 @@
+out <- factanal(dat,factors=4,rotation="promax",scores="regression")
+
+Call:
+factanal(x = dat, factors = 4, scores = "regression", rotation = "promax")
+
+Uniquenesses:
+          ff.thickness           bulk.density              soil.mass 
+                 0.311                  0.922                  0.560 
+                     c                      n                     om 
+                 0.045                  0.219                  0.149 
+                   no3                  n.min                   nitr 
+                 0.961                  0.879                  0.936 
+                    mg                      k          soil.moisture 
+                 0.007                  0.703                  0.369 
+
+                 ph.h2o               ph.cacl2
+                  0.622                  0.292
+                      p                    nh4
+                  0.727                  0.884
+                    cec                     ca
+                  0.815                  0.476
+ soil.moisture.capacity
+                  0.720
+
+
+Loadings:
+                       Factor1 Factor2 Factor3 Factor4
+ff.thickness            0.115   0.865   0.120         
+bulk.density           -0.202                         
+soil.mass              -0.187   0.319  -0.439         
+ph.h2o                          0.282   0.706         
+ph.cacl2               -0.311   0.161   0.827         
+c                       0.877   0.119  -0.229         
+n                       0.862   0.133                 
+om                      0.822   0.167  -0.168         
+p                       0.419  -0.199           0.180 
+nh4                     0.238  -0.260          -0.130 
+no3                     0.131           0.164         
+n.min                                   0.283         
+nitr                                   -0.225         
+cec                             0.344           0.302 
+ca                     -0.142  -0.127   0.267   0.566 
+mg                              0.140  -0.124   1.010 
+k                              -0.217           0.480 
+soil.moisture           0.252   0.774   0.116         
+soil.moisture.capacity  0.136   0.530           0.131 
+
+               Factor1 Factor2 Factor3 Factor4
+SS loadings      2.747   2.220   1.771   1.755
+Proportion Var   0.145   0.117   0.093   0.092
+Cumulative Var   0.145   0.261   0.355   0.447
+
+Factor Correlations:
+        Factor1 Factor2 Factor3 Factor4
+Factor1   1.000   0.119   0.191  -0.108
+Factor2   0.119   1.000  -0.184   0.133
+Factor3   0.191  -0.184   1.000  -0.564
+Factor4  -0.108   0.133  -0.564   1.000
+
+Test of the hypothesis that 4 factors are sufficient.
+The chi square statistic is 230.17 on 101 degrees of freedom.
+The p-value is 4.43e-12 
+> 

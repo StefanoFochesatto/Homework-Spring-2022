@@ -1,0 +1,103 @@
+myGeodata <- wolfcamp
+myName <- "wolfcamp"
+
+## Specifying the prior distributions (Discussed in question 4)
+my_prior_control <- prior.control(
+  beta.prior = "normal",
+  beta = c(600, 0.0, 0.0, 0.0, 0.0, 0.0),
+  beta.var.std = 10000*diag(6),
+  
+  sigmasq.prior="reciprocal",
+  phi.discrete = seq(20, 40, length=600),
+  tausq.rel.prior="uniform",
+  tausq.rel.discrete=seq(from=.01,to=.6,length=63))
+
+## Specifying the type and trend of the variogram
+my_model_control <- model.control(trend.d = "2nd",
+    trend.l = "2nd",
+    cov.model = "exponential")
+
+## Specifying the number of samples taken from the posterior
+## and predictive dists.
+my_output_control <- output.control( n.posterior=5000,
+  n.predictive = 1000 )
+
+## Specifying prediction grid
+lonmin <- min(wolfcamp$borders[,1])
+lonmax <- max(wolfcamp$borders[,1])
+latmin <- min(wolfcamp$borders[,2])
+latmax <- max(wolfcamp$borders[,2])
+
+boxwid = 10
+my_grid <- pred_grid(
+  c(lonmin,lonmax),
+  c(latmin,latmax), by=boxwid )
+
+
+## Carrying the MCMC algorithm. 
+my_bayes_results <- krige.bayes(wolfcamp,
+  locations = my_grid,
+  model = my_model_control,
+  prior = my_prior_control,
+  output = my_output_control)
+
+
+
+## Plotting Kriged smoothed surface. 
+one_plot( my_bayes_results$predictive$mean,
+          lonmin,lonmax, latmin,latmax, boxwid,
+          "Longitude",'Latitude',
+          myGeodata$borders,my_colors, myGeodata$coords,
+          "Bayesian Kriged Wolfcamp Data" )
+
+
+## Plotting Trace Plots for each Parameter. 
+plot(mcmc( cbind(my_beta0_draws, 
+                 my_beta1_draws, 
+                 my_beta2_draws, 
+                 my_beta3_draws)))
+
+plot(mcmc( cbind(my_beta4_draws, 
+                 my_beta5_draws, 
+                 my_sigsq_draws, 
+                 my_phi_draws)))
+
+plot(mcmc( cbind(my_tausq_draws)))
+
+
+
+###############################################
+# credible_sets
+if(TRUE) {
+  nro <- nrow(my_bayes_results$predictive$simulations)
+  lows  <- rep( NA, nro )
+  highs <- rep( NA, nro )
+  for( i in 1:nro ) { # extract one row (i.e. one
+    # prediction location, and find percentiles:
+    this_site <- my_bayes_results$predictive$simulations[i,]
+    ordered <- sort(this_site)
+    lows[i]  <- quantile( ordered, 0.025 )
+    highs[i] <- quantile( ordered, 0.975 )
+  }
+
+  one_plot( highs,
+          lonmin,lonmax, latmin,latmax, boxwid,
+          "x coord","y coord",
+          myGeodata$borders,my_colors, myGeodata$coords,
+          "highest 2.5%" )
+
+  one_plot( lows,
+            lonmin,lonmax, latmin,latmax, boxwid,
+            "x coord","y coord",
+            myGeodata$borders,my_colors, myGeodata$coords,
+            "lowest 2.5%" )
+
+  diffs <- highs-lows
+  one_plot( diffs,
+            lonmin,lonmax, latmin,latmax, boxwid,
+            "x coord","y coord",
+            myGeodata$borders,my_colors, myGeodata$coords,
+            "diffs" )
+  
+  
+}

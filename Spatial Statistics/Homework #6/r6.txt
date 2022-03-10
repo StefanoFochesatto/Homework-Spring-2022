@@ -1,0 +1,3 @@
+directional_vario <- variog4(wolfcamp, trend="2nd",
+                             estimator.type="modulus")
+plot(directional_vario)
