@@ -1,0 +1,14 @@
+scallops <- read.table("scallops.txt", header=TRUE)
+
+scallops$logcatch <- log( 1 + scallops$tcatch )
+scallops$clons <- scallops$long - mean(scallops$long)
+scallops$clats <- scallops$lat - mean(scallops$lat)
+
+geo.scallops <- as.geodata(cbind(scallops$clons, 
+                                 scallops$clats, 
+                                 scallops$logcatch))
+
+geo.scallops$borders <- get.borders(cbind(scallops[,10],scallops[,11]), 
+                                    concavity_param = 1, frac = .25)
+
+plot(geo.scallops)

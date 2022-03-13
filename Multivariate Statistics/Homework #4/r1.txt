@@ -1,0 +1,28 @@
+mahal <- mahalanobis(X, center = colMeans(X), cov = cov(X))
+> mahal
+ [1]  5.971155  2.355915  2.521097  2.785808  3.162355  4.865521
+ [7]  3.498117  3.567076  6.134994  7.074793  9.485738 19.856193
+[13]  3.082716  3.620258  4.578934  2.081030  1.004770  1.804360
+[19]  1.877088  4.885187 14.401283  4.915442  4.662472  3.313876
+[25]  2.394622  4.681316  5.559891  5.742372  3.101340  2.014282
+
+
+## Plotting chiSquared 95% cuttoff. 
+hist(mahal, n=10, freq=FALSE, xlab = 'Mahalanobis Distance', 
+     main = 'Density of Mahalanobis Dist.')
+
+xseq <- seq(0,45,length=300)
+lines(xseq, dchisq(xseq, df=ncol(X)), col=2, lwd=2)
+abline(v = qchisq(p = 0.95 , df = ncol(X)))
+
+## Pulling the values and indices for outliers
+Values <- mahal[mahal > qchisq(p = 0.95 , df = ncol(X))] 
+#[1] 19.85619 14.40128
+
+Index <- which(mahal > qchisq(p = 0.95 , df = ncol(X))) 
+#[1] 12 21
+
+## Plotting pair plot with outliers highlighted
+color <- rep(1, nrow(X))
+color[Index] <- 2
+pairs(X, col=color, pch=19)

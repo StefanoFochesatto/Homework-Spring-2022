@@ -50,6 +50,10 @@
 \newcommand{\bu}{\mathbf{u}}
 \newcommand{\bw}{\mathbf{w}}
 
+\usepackage{tikz}
+
+
+
 \newcommand{\bF}{\mathbf{F}}
 \newcommand{\bG}{\mathbf{G}}
 \newcommand{\bQ}{\mathbf{Q}}
@@ -126,13 +130,11 @@
   \begin{itemize}
   \item What is a Decision Tree?
   \vfill
-  \item Motivations and Prevalence.
-  \vfill
   \item Training the Tree.
   \vfill
-  \item Advantages and Pitfalls.
-  \vfill
   \item Code Demo.
+  \vfill
+  \item Advantages and Pitfalls.
   \vfill
   \item Application in Ensemble Models.
   \end{itemize}
@@ -144,7 +146,7 @@
 
 
 
-\begin{frame}{What is Decision Tree Learning?}
+\begin{frame}{What is Decision Tree?}
     \begin{columns}[T]
       \begin{column}{.60\textwidth}
         \begin{center}
@@ -153,6 +155,7 @@
             \item A flowchart where internal nodes represent a test for the data.
             \item Leaf nodes apply classification label or regression.
             \item Derived from recursive partitioning. 
+            \item All nodes represent some partition of the data.
             \item We will discuss classification mainly, 
         \end{itemize}
       \end{center}
@@ -170,7 +173,7 @@
     \end{columns}
   \end{frame}
 
-  \begin{frame}{What is Decision Tree Learning?}
+  \begin{frame}{What is Decision Tree?}
             \begin{figure}
               \vspace*{\fill}
               \begin{center}
@@ -182,6 +185,16 @@
   \end{frame}
 
 
+  \begin{frame}{What is Decision Tree?}
+  \begin{itemize}
+    \item Small Demo building a decision tree. 
+  \end{itemize}
+  \end{frame}
+
+
+
+
+
   
   \begin{frame}{Training the Tree.}
     \begin{itemize}
@@ -191,9 +204,10 @@
     \vfill
     \item There are several algorithms for training.
       \begin{itemize}
-        \item CART (L.Breimann)
-        \item ID3 and C4.5 (R.Quinlan)
+        \item CART (L.Breimann et al., 1984)
+        \item ID3 and C4.5 (R.Quinlan 1983, 93)
         \item C5.0 (R.Quinlan)
+        \item and many more...
       \end{itemize}
     \end{itemize}
 
@@ -225,18 +239,57 @@
               \end{figure}
             \end{column}
       \end{columns}
-      \item To optimize our tree we need to be able to quantify the quality of a split (or generalized state)?
+      \item To optimize our tree we need to be able to quantify the quality of a split (or generalized node)?
     \end{itemize}  
   \end{frame}
 
 
   \begin{frame}{Information Theory}
+      \begin{columns}[T]
+        \begin{column}{.60\textwidth}
+          \begin{itemize}
+            \item Let $X$ be a discrete random variable which represents a node $S$'s predicted class. 
+            \vfill
+            \item Let $p(x)$ be the probability mass function.
+            \vfill
+            \item Consider the following example,
+            \begin{equation*}
+              p(\tikz\draw[red,fill=red] (0,0) circle (.5ex);) = \dfrac{\text{$\#$ of \tikz\draw[red,fill=red] (0,0) circle (.5ex);}}{\text{Total $\#$ data in $S$}} = \dfrac{3}{5}, 
+            \end{equation*}
+            \begin{equation*}
+              p(\tikz\draw[blue,fill=blue] (0,0) circle (.5ex);) = \dfrac{\text{$\#$ of \tikz\draw[blue,fill=blue] (0,0) circle (.5ex);}}{\text{Total $\#$ data in $S$}} = \dfrac{2}{5}. 
+            \end{equation*}
+          \end{itemize}
+        \end{column}
+        \begin{column}{.40\textwidth}
+          \begin{figure}
+            \vspace*{\fill}
+            \begin{center}
+          \includegraphics[width=\textwidth]{NodeS.jpg}
+            \end{center}
+            \vspace*{\fill}
+          \end{figure}
+        \end{column}
+      \end{columns}
+  \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+  \begin{frame}{Information Theory}
     \begin{itemize}
-      \item Let $X$(observation) be a discrete random variable with $n$(classes) possible outcomes and pmf p(x)(prob distribution at node).
+      \item From the previous slide we know that $X$ is a d.r.v with $n$(classes) possible outcomes and pmf $p(x)$. Now consider the following,
       \vfill
-      \item In information theory, the unit of information ascribed to an outcome $x \in n$ is a log measure of 1/p(x),
+      \item In information theory, the unit of information ascribed to an outcome $x \in [n]$ is a log measure of 1/p(x),
       \begin{equation*}
-        I = \log\left(\frac{1}{p(x)}\right) = -\log(p(x)).
+        I = \log_2\left(\frac{1}{p(x)}\right) = -\log_2(p(x)).
       \end{equation*} 
       \vfill
       \item Events that are rare have more information, events that are common have less information. 
@@ -272,36 +325,178 @@
     \end{equation*}
     \item Again evaluating a split we take a weighted sum, 
     \begin{equation*}
-      Gini_{split} = \sum Gini_{children}.
+      Gini_{split} = \sum w(i) Gini_{children}.
     \end{equation*}
     \item Both methods are largely the same, Gini is preferred for predictive performance and computational complexity. 
   \end{itemize}
   \end{frame}
 
+
   \begin{frame}{Training the Tree}
-  \begin{itemize}
-     \item BuildTree(node);
-     \begin{itemize}
-       \item if statement for stopping criteria;
-       \item Best\_gini = gini(node.observations)
-       \item Best\_feature
-       \item Best\_threshold
-       \item loop through features;
-       \begin{itemize}
-         \item sort all observations by current feature;
-         \item loop through observations;
-         \begin{itemize}
-           \item left\_gini = gini(node.observations[1:i])
-           \item right\_gini = gini(node.observations[i+1:n])
-           \item split\_gini = (i/n)left\_gini + ((i+1 - n)/n)right\_gini
-           \item if split\_gini < Best\_gini; Best\_Gini = split\_gini; Best\_feature = j; Best\_threshold = i
-         \end{itemize}  
-       \end{itemize}
-       \item BuildTree(node.left)
-       \item BuildTree(node.right)
+    \begin{figure}
+      \vspace*{\fill}
+      \begin{center}
+    \includegraphics[width=.75\textwidth]{GinivsCrossEntropy.png}
+      \end{center}
+      \vspace*{\fill}
+    \end{figure}
+  \end{frame}
+
+  
+
+
+  \begin{frame}{Training the Tree}
+    \begin{itemize}
+      \item A Very Naive Algorithm:
+      \begin{itemize}
+        \item Search through each feature, threshold pair to find the optimal split for the current partition. 
+        \item Partition the data.
+        \item Recurse.
+        \item Exit through hyperparameter or complete classification of training data.
       \end{itemize}
+      \vfill
+      \item Code Demo
     \end{itemize}
   \end{frame}
+
+
+  \begin{frame}{Advantages and Pitfalls.}
+    \begin{itemize}
+      \item Mimics human decision making. 
+      \vfill
+      \item Can handle numerical and categorical data.
+      \vfill
+      \item Is an open-box model.
+      \vfill
+      \item Has naive runtime of $O(mn^2log(n))$. 
+      \vfill
+      \item It is robust to colinearity.
+      \vfill
+      \item Built-in metric for feature importance (with caveats)
+      \vfill
+      \item Very robust when boosted and bagged.
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame}{Advantages and Pitfalls.}
+    \begin{itemize}
+      \item Will be easily outperformed by other methods against linear decision boundaries,
+      \begin{figure}
+        \vspace*{\fill}
+        \begin{center}
+      \includegraphics[width=.50\textwidth]{LinearBoudary.png}
+        \end{center}
+        \caption{I.S.L. James, Witten, Hastie, Tibshirani}
+        \vspace*{\fill}
+      \end{figure}
+    \end{itemize}
+  \end{frame}
+
+  
+  \begin{frame}{Advantages and Pitfalls.}
+    \begin{itemize}
+      \item Is prone to overfitting, 
+      \begin{figure}
+        \vspace*{\fill}
+        \begin{center}
+      \includegraphics[width=.70\textwidth]{Overfitting.png}
+        \end{center}
+        \caption{SKLearn Docs}
+        \vspace*{\fill}
+      \end{figure}
+    \end{itemize}
+  \end{frame}
+
+
+
+
+  \begin{frame}{Dealing with Overfitting.}
+    \begin{itemize}
+      \item Generally there are two ways to deal with overfitting.
+        \begin{itemize}
+          \item Tuning Hyperparameters (pre-pruning)
+       
+          \begin{itemize}
+            \item max depth, min samples leaf, min samples split\dots
+            \item Grid Search Optimization =(
+          \end{itemize}
+          \vfill
+          
+          \item Cost Complexity Analysis (post-pruning)
+          \begin{itemize}
+            \item Another optimization problem.
+            \item Grow Tree $T_0$ to Maximal Length,
+            \item Find the sub tree $T \subset T_0$ which minimizes the following, 
+            \begin{equation*}
+              C(T)_{\alpha} = \sum_{Internal Nodes}^{|T|} Entropy + \alpha|T|
+            \end{equation*}
+            \item $\alpha$ is another parameter which is estimated using cross-validation. 
+          \end{itemize}
+        \end{itemize}
+      
+        \item Note the Bias-Variance trade-off of pruning. 
+    \end{itemize}
+  \end{frame}
+
+
+
+  \begin{frame}{Applications in Ensemble Models.}
+    \begin{itemize}
+      \item Bagging (and RandomForest)
+        \begin{itemize}
+          \item The underlying idea is model averaging (many to one).
+          \item Bootstrap the data (RandomForest means bootstrapping features). 
+          \item Construct several full size decision trees.
+          \item When predicting average the results (majority vote).  
+        \end{itemize}
+        \vfill
+      \item Individual models have very low bias.
+      \item Averaging the models reduces the variance.
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame}{Applications in Ensemble Models.}
+    \begin{itemize}
+      \item Decision Tree Ensembles are good.
+      \begin{figure}
+        \vspace*{\fill}
+        \begin{center}
+      \includegraphics[width=.50\textwidth]{Delgado.png}
+        \end{center}
+        \caption{179 Classifiers, 17 families, 121 datasets}
+        \vspace*{\fill}
+      \end{figure}
+      
+      
+      \item Concluded that the best classifier over several datasets and metrics was an implementation of RandomForest.
+      \item Six RandomForest classifiers and five SVM were among the top 20 classifiers. 
+
+    \end{itemize}
+  \end{frame}
+
+
+  
+  \begin{frame}{Applications in Ensemble Models.}
+    \begin{itemize}
+      \item Decision Tree Ensembles are good. 
+      \begin{figure}
+        \vspace*{\fill}
+        \begin{center}
+      \includegraphics[width=.65\textwidth]{Kaggle.png}
+        \end{center}
+        \caption{2021 Kaggle survery: Over 25,000 Data Scientists and ML Engineers.}
+        \vspace*{\fill}
+      \end{figure}
+      \item Among ML practitioners decision trees are nearly as ubiquitous as regression.  
+    \end{itemize}
+  \end{frame}
+
+
+  
+
+
 
 
 

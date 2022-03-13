@@ -1,0 +1,4 @@
+## Weights for (.1, .9)
+#  0.0793  0.8280  0.0811  0.0420 -0.0440  0.0140
+signif(krweights(locs, loc=c(0.1,0.9), krige=my_kr_obj), 3)
+points(0.1,0.9, pch=10, col = 'red');

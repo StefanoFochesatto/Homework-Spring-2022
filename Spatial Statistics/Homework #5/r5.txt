@@ -1,0 +1,8 @@
+my_grays <- gray( seq(25/63, 59/63, length=40))
+one_plot(my_kr_results$predict, 
+         -1.182545 , 1.400785, 
+         -1.513176, 1.203494, .02, 
+         'Centered Longitudes', 'Centered Latitudes', 
+         geo.scallops$borders, my_grays, 
+         geo.scallops$coords, 
+         'Universal Kriging Scallop Data Gaussian ML Model')

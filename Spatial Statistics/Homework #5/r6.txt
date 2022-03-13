@@ -1,0 +1,9 @@
+lons <- geo.scallops$coords[,1]
+lats <- geo.scallops$coords[,2]
+
+bar <- interp(lons, lats, geo.scallops$data, linear = TRUE)
+
+image(bar, xlim =c( -1.182545 , 1.400785), ylim = c(-1.513176, 1.203494), 
+      col = my_grays, main = 'Akima on Scallop Data' )
+
+contour(bar, labcex =1.5, add = TRUE)

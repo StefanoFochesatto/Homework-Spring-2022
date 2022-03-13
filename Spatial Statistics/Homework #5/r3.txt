@@ -1,0 +1,18 @@
+# > range(scallops$clons)
+#     [1] -0.9825453  1.2007847
+#
+# > range(scallops$clats)
+#     [1] -1.313176  1.003494
+
+## Add .2 to either side of the interval
+## Then compute the range and divide by 100
+abs(-1.182545-1.400785)/100
+# .0258
+abs(-1.513176 - 1.203494)/100
+# .0271
+
+# Setting the step size to .02 seems good and ensured at least 100X100
+my_grid <- pred_grid(c(-1.182545, 1.400785), c(-1.513176, 1.203494 ), by = .02)
+
+lons_p <- my_grid[,1]
+lats_p <- my_grid[,2]

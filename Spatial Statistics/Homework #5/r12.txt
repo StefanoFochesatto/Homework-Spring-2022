@@ -1,0 +1,4 @@
+## Weights for (1.05, -.05)
+#  -0.00514 -0.00158  0.00155  0.46600  0.48600  0.05300
+signif(krweights(locs, loc=c(1.05, -.05), krige=my_kr_obj), 3)
+points(1.05, -.05, pch=10, col = 'red');

@@ -1,0 +1,8 @@
+curve(1.5 - (matern(x, phi = 1, kappa = .5)) + 1, from = 0, to = 12, 
+            col = 'red' ,ylab = expression(gamma(h)), xlab = expression(h))
+
+curve(1.5 - (matern(x, phi = 1, kappa = 5)) + 1, 
+            add = TRUE, col = 'blue')
+
+legend(8, 1.8, legend = c('kappa = .5', 'kappa = 5'), 
+            col = c('red', 'blue'), lty=1, cex=0.8)

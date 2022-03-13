@@ -1,0 +1,11 @@
+my_kr_obj <- krige.control(
+  type.krige="OK", # Universal kriging
+  trend.d = "2nd",
+  trend.l = "2nd",
+  cov.model="gaussian",
+  cov.pars=c(3.60472588,.13487626),
+  nugget=.03058721 )
+
+my_kr_results <- krige.conv( geo.scallops,
+                             krige=my_kr_obj,
+                             locations= cbind(lons_p, lats_p))

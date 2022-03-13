@@ -1,0 +1,12 @@
+my_kr_obj <- krige.control(
+  type.krige="OK",cov.model="spherical",
+  cov.pars=c(4,2),
+  nugget=0)
+
+lon <- c(0,0,1,1, 1.1, .9)
+lat <- c(0,1,1,0, -.1,-.1)
+locs <- cbind(lon, lat)
+plot(lon, lat, xlim=c(-.1,1.2), 
+    ylim=c(-.2,1.2), xlab="",ylab="",
+    pch = 3, cex = 2 )
+

@@ -1561,6 +1561,7 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\oberdie
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\oberdiek\aliascnt.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\oberdiek\aliascnt.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\oberdiek\aliascnt.sty
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.aux
 INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.aux
 INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.aux
@@ -1618,6 +1619,16 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\generic\getti
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
 OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.out
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-basic-dictionary-English.dict
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-basic-dictionary-English.dict
@@ -1644,6 +1655,9 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\transla
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.nav
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.nav
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.nav
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
@@ -1735,14 +1749,81 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\NodeS.jpg
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\GinivsCrossEntropy.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\LinearBoudary.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Overfitting.png
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy9.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvbo8t.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Delgado.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\Kaggle.png
 OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.nav
 OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.toc
 OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of Machine Learning\DecisionTreePresentation.snm
@@ -1752,14 +1833,26 @@ INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Mathematics of
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex9.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex9.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss8.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss8.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss9.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss9.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
