@@ -1,0 +1,17 @@
+Exponential
+Max.Distance: 408
+Sill: 2311
+Range: 45.34
+Nugget: 924.73
+
+Gaussian
+Max.Distance: 408
+Sill: 2543
+Range: 79.35
+Nugget: 1155.91
+
+Spherical
+Max.Distance: 408
+Sill: 2080
+Range: 79.35
+Nugget: 1155.91

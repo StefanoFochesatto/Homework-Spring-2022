@@ -1,0 +1,15 @@
+plot(robust_vario, main = 'Comparing Semivariograms', 
+     ylab = 'Semivariance', xlab = 'Distance')
+
+Freq_param <- c(2458, 30.9, 752.123)
+Bays_param <- c(2687, 31.1, 899.415)
+x <- seq(0, 400, .01);
+
+y_freq <- Freq_param[3] + Freq_param[1]*(1 - exp(-x/Freq_param[2])) 
+y_bays <- Bays_param[3] + Bays_param[1]*(1 - exp(-x/Bays_param[2])) 
+lines(x, y_freq, col = 'red')
+lines(x, y_bays, col = 'blue')
+
+legend(x = 0, y = 8000, legend = c('Frequentist', 'Bayesian'), 
+       col = c('red', 'blue'),lty=1, cex=0.8)
+

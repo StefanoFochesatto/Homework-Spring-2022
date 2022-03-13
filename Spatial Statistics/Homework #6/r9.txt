@@ -1,0 +1,46 @@
+## Generating the kriging object. 
+my_kr_obj <- krige.control(
+    type.krige = 'OK',
+    trend.d = '2nd',
+    trend.l = '2nd',
+    cov.model = 'exponential',
+    cov.pars = ML_exponential$cov.pars,
+    nugget = ML_exponential$nugget, 
+)
+
+## Pulling the bounding lon, lat pairs. 
+lonmin <- min(wolfcamp$borders[,1])
+lonmax <- max(wolfcamp$borders[,1])
+latmin <- min(wolfcamp$borders[,2])
+latmax <- max(wolfcamp$borders[,2])
+
+## Resolution was computed by dividing the range of both 
+## the lat and lon by 100 and picking the smaller one
+## for me this generates a ~200*400 pred grid
+res = 2
+
+## Generating the prediction grid
+my_grid <- pred_grid(
+  c(lonmin,lonmax),
+  c(latmin,latmax),
+  by = res )
+
+
+## Generating prediction surface
+my_kr_results <- krige.conv(wolfcamp, 
+                            krige = my_kr_obj,
+                            locations = my_grid)
+
+
+## Ploting the prediction surface
+my_grays <- gray( seq(25/63, 59/63,length = 40 ))
+one_plot(my_kr_results$predict,
+         lonmin, lonmax, 
+         latmin, latmax, res,
+         'longitude', 'latitude', 
+         wolfcamp$border, my_grays, 
+         wolfcamp$coords, 
+         'Universal Kriging 2nd Order ML Estimator')
+
+
+

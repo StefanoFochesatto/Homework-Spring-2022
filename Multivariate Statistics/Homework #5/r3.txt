@@ -1,0 +1,37 @@
+___________________________________________________
+#### PCA with X and Covariance Matrix
+summary(princomp(X))
+Importance of components:
+                          Comp.1    Comp.2     Comp.3     Comp.4
+Standard deviation     2.5105558 1.0157902 0.79133114 0.43315887
+Proportion of Variance 0.7734982 0.1266274 0.07684863 0.02302576
+Cumulative Proportion  0.7734982 0.9001256 0.97697424 1.00000000
+___________________________________________________
+#### PCA with X and Correlation Matrix
+summary(princomp(X, cor = TRUE))
+Importance of components:
+                          Comp.1    Comp.2    Comp.3     Comp.4
+Standard deviation     1.4408041 1.0741502 0.8147347 0.32633153
+Proportion of Variance 0.5189791 0.2884497 0.1659481 0.02662307
+Cumulative Proportion  0.5189791 0.8074288 0.9733769 1.00000000
+___________________________________________________
+___________________________________________________
+#### Scaling the first variable by 100
+XScaledUP <- cbind(X[,1]*100, X[,(2:4)])
+
+#### PCA with Scaled X and Covariance Matrix
+summary(princomp(XScaledUP))
+Importance of components:
+                            Comp.1       Comp.2       Comp.3       Comp.4
+Standard deviation     103.4506348 1.9300487517 9.157441e-01 4.780835e-01
+Proportion of Variance   0.9995524 0.0003479171 7.832267e-05 2.134749e-05
+Cumulative Proportion    0.9995524 0.9999003298 9.999787e-01 1.000000e+00
+___________________________________________________
+#### PCA with Scaled X and Correlation Matrix
+summary(princomp(XScaledUP, cor = TRUE))
+Importance of components:
+                          Comp.1    Comp.2    Comp.3     Comp.4
+Standard deviation     1.4408041 1.0741502 0.8147347 0.32633153
+Proportion of Variance 0.5189791 0.2884497 0.1659481 0.02662307
+Cumulative Proportion  0.5189791 0.8074288 0.9733769 1.00000000
+___________________________________________________

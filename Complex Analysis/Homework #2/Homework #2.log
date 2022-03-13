@@ -1,27 +1,30 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.1.25)  24 JAN 2022 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.8)  23 FEB 2022 10:28
 entering extended mode
-**"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.tex"
-("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.tex"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.tex"
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-01-09> xparse <2020-03-03> (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@section=\count178
-\c@subsection=\count179
-\c@subsubsection=\count180
-\c@paragraph=\count181
-\c@subparagraph=\count182
-\c@figure=\count183
-\c@table=\count184
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
@@ -29,30 +32,30 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen139
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count185
+\inf@bad=\count187
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count186
-\leftroot@=\count187
+\uproot@=\count188
+\leftroot@=\count189
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count188
-\DOTSCASE@=\count189
+\classnum@=\count190
+\DOTSCASE@=\count191
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -61,15 +64,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count190
-\c@MaxMatrixCols=\count191
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
 \dotsspace@=\muskip16
-\c@parentequation=\count192
-\dspbrk@lvl=\count193
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
 \tag@help=\toks17
-\row@=\count194
-\column@=\count195
-\maxfields@=\count196
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
 \andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -83,7 +86,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -94,19 +97,19 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip53
 \thm@headsep=\skip54
 \dth@everypar=\toks26
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks27
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count197
-\Gm@cntv=\count198
-\c@Gm@tempcnt=\count199
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen148
 \Gm@wd@mp=\dimen149
 \Gm@odd@mp=\dimen150
@@ -116,8 +119,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen154
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks28
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@O@elh=\skip56
 \f@nch@O@erh=\skip57
@@ -127,56 +130,56 @@ Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
 \f@nch@O@erf=\skip61
 \f@nch@O@olf=\skip62
 \f@nch@O@orf=\skip63
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\enumerate.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks29
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count266
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count268
 \lst@gtempboxa=\box49
 \lst@token=\toks30
-\lst@length=\count267
+\lst@length=\count269
 \lst@currlwidth=\dimen156
-\lst@column=\count268
-\lst@pos=\count269
+\lst@column=\count270
+\lst@pos=\count271
 \lst@lostspace=\dimen157
 \lst@width=\dimen158
-\lst@newlines=\count270
-\lst@lineno=\count271
+\lst@newlines=\count272
+\lst@lineno=\count273
 \lst@maxwidth=\dimen159
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count272
-\lst@skipnumbers=\count273
+\c@lstnumber=\count274
+\lst@skipnumbers=\count275
 \lst@framebox=\box50
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count274
+\c@float@type=\count276
 \float@exts=\toks31
 \float@box=\box51
 \@float@everytoks=\toks32
 \@floatcapt=\box52
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfonts.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -265,24 +268,24 @@ LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 92.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count275
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box53
-) ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Complex Analysis\Homework #2\Homework #2.aux")
+) (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.aux)
 \openout1 = `"Homework #2.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 92.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 92.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 92.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 92.
@@ -294,13 +297,13 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 92.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 92.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 92.
@@ -339,42 +342,44 @@ LaTeX Font Info:    ... okay on input line 92.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count276
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+\c@lstlisting=\count278
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
+\scratchcounter=\count279
 \scratchdimen=\dimen162
 \scratchbox=\box54
-\nofMPsegments=\count278
-\nofMParguments=\count279
+\nofMPsegments=\count280
+\nofMParguments=\count281
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count280
+\MPscratchCnt=\count282
 \MPscratchDim=\dimen163
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
 \everyMPtoPDFconversion=\toks34
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 96.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 98.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 98.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 98.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 98.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 98.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 Underfull \hbox (badness 10000) in paragraph at lines 98--99
@@ -383,7 +388,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
 
 Overfull \hbox (6.52101pt too wide) in paragraph at lines 99--101
-\OT1/txr/m/n/12 Consider the po-lar form for each com-plex num-ber $\OML/txmi/m/it/12 z[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 r[]\OT1/txr/m/n/12 ([](\OML/txmi/m/it/12 []\OT1/txr/m/n/12 ) + \OML/txmi/m/it/12 i []\OT1/txr/m/n/12 (\OML/txmi/m/it/12 []\OT1/txr/m/n/12 ))\OML/txmi/m/it/12 ; z[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 r[]\OT1/txr/m/n/12 ([](\OML/txmi/m/it/12 []\OT1/txr/m/n/12 ) +
+\OT1/txr/m/n/12 Consider the po-lar form for each com-plex num-ber $\OML/txmi/m/it/12 z[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 r[]\OT1/txr/m/n/12 ([](\OML/txmi/m/it/12 ^^R[]\OT1/txr/m/n/12 ) + \OML/txmi/m/it/12 i []\OT1/txr/m/n/12 (\OML/txmi/m/it/12 ^^R[]\OT1/txr/m/n/12 ))\OML/txmi/m/it/12 ; z[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 r[]\OT1/txr/m/n/12 ([](\OML/txmi/m/it/12 ^^R[]\OT1/txr/m/n/12 ) +
  []
 
 
@@ -396,7 +401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[1{C:/Users/StefanoFochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 175--177
@@ -490,7 +495,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
 
 Overfull \hbox (7.92924pt too wide) in paragraph at lines 406--408
-\OT1/txr/m/n/12 Again re-call the de-com-po-si-tion of $\OML/txmi/m/it/12 e[]$ \OT1/txr/m/n/12 via equa-tion (8), note that $\OML/txmi/m/it/12 e[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 e[]\OT1/txr/m/n/12 ([]((\OMS/txsy/m/n/12  \OT1/txr/m/n/12 1)\OML/txmi/m/it/12 y\OT1/txr/m/n/12 ) +
+\OT1/txr/m/n/12 Again re-call the de-com-po-si-tion of $\OML/txmi/m/it/12 e[]$ \OT1/txr/m/n/12 via equa-tion (8), note that $\OML/txmi/m/it/12 e[] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 e[]\OT1/txr/m/n/12 ([]((\OMS/txsy/m/n/12 ^^@\OT1/txr/m/n/12 1)\OML/txmi/m/it/12 y\OT1/txr/m/n/12 ) +
  []
 
 
@@ -518,19 +523,20 @@ Overfull \hbox (47.50032pt too wide) detected at line 485
 []
  []
 
-[11] [12] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Complex Analysis\Homework #2\Homework #2.aux") ) 
+[11] [12] (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.aux) ) 
 Here is how much of TeX's memory you used:
- 5269 strings out of 479618
- 73989 string characters out of 2859326
- 360691 words of memory out of 3000000
- 22368 multiletter control sequences out of 15000+200000
- 424811 words of font info for 75 fonts, out of 3000000 for 9000
+ 5258 strings out of 478994
+ 71733 string characters out of 5858185
+ 375004 words of memory out of 5000000
+ 22670 multiletter control sequences out of 15000+600000
+ 424811 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,74p,368b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Complex Analysis\Homework #2\Homework #2.pdf" (12 pages, 80635 bytes).
+ 68i,12n,74p,387b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Complex Analysis/Homework #2/Homework #2.pdf" (12 pages, 72162 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

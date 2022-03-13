@@ -1,0 +1,40 @@
+########### Defining first and second order models
+> firstOrder <- lm(WolfData ~ lat + lon)
+> secondOrder <- lm(WolfData ~ lat + lon + 
+                    I(lat^2) + I(lon^2) + I(lon*lat))
+###### Partial F-test
+> anova(firstOrder, secondOrder)
+Analysis of Variance Table
+
+Model 1: WolfData ~ lat + lon
+Model 2: WolfData ~ lat + lon + I(lat^2) + I(lon^2) + I(lon * lat)
+  Res.Df    RSS Df Sum of Sq      F   Pr(>F)    
+1     82 318200                                 
+2     79 256887  3     61313 6.2852 0.000702 ***
+
+
+
+########### Consider the significance of each term. 
+> summary(secondOrder)
+
+Call:
+lm(formula = WolfData ~ lat + lon + I(lat^2) + I(lon^2) + I(lon * 
+    lat))
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-124.405  -43.662   -2.337   39.017  199.198 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   6.203e+02  1.295e+01  47.902  < 2e-16 ***
+lat          -1.330e+00  8.861e-02 -15.008  < 2e-16 ***
+lon          -1.075e+00  8.191e-02 -13.128  < 2e-16 ***
+I(lat^2)     -2.929e-03  1.101e-03  -2.659 0.009486 ** 
+I(lon^2)      8.994e-05  5.908e-04   0.152 0.879388    
+I(lon * lat)  3.184e-03  8.790e-04   3.622 0.000515 ***
+
+
+Residual standard error: 57.02 on 79 degrees of freedom
+Multiple R-squared:  0.9119,	Adjusted R-squared:  0.9063 
+F-statistic: 163.6 on 5 and 79 DF,  p-value: < 2.2e-16

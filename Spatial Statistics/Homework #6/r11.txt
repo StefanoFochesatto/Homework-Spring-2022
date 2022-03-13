@@ -1,0 +1,10 @@
+## Correlation Analysis. 
+plot( my_sigsq_draws, my_phi_draws )
+
+plot( my_sigsq_draws, my_tausq_draws )
+
+plot( my_phi_draws, my_tausq_draws )
+
+cor( my_sigsq_draws, my_phi_draws ) # 0.1042849
+cor( my_sigsq_draws, my_tausq_draws ) # -0.2915101
+cor( my_phi_draws, my_tausq_draws ) # 0.1908251

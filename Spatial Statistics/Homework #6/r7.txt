@@ -1,0 +1,122 @@
+######## Fitting the robust empirical second order trend semivariogram
+robust_vario <- variog(wolfcamp, trend="2nd", estimator.type="modulus")
+
+
+### Fitting the WLS estimator for each type of semivariogram
+WLS_exponential <- variofit(robust_vario, cov.model = 'exponential', 
+                            max.dist = 408, 
+                            ini.cov.pars = c(2311,45.34), 
+                            nugget = 924.73)
+
+
+WLS_gaussian <- variofit(robust_vario, cov.model = 'gaussian', 
+                            max.dist = 408, 
+                            ini.cov.pars = c(2311,45.34), 
+                            nugget = 924.73)
+
+
+WLS_spherical <- variofit(robust_vario, cov.model = 'spherical', 
+                         max.dist = 408, 
+                         ini.cov.pars = c(2311,45.34), 
+                         nugget = 924.73)
+
+
+## Generating plot of WLS estimators
+plot(robust_vario)
+lines(WLS_spherical, col = 'blue')
+lines(WLS_gaussian)
+lines(WLS_exponential, col = 'red')
+legend(x = 0, y = 8000, legend = c('Spherical', 'Gaussian', 'Exponential'), 
+       col = c('blue', 'black','red'), 
+       lty=1, cex=0.8)
+
+
+
+## Storing initial values for ML and REML
+init_pars_exp <- WLS_exponential$cov.pars
+init_pars_gauss <- WLS_gaussian$cov.pars
+init_pars_sphere <- WLS_spherical$cov.pars
+
+init_tau_exp <- WLS_exponential$nugget
+init_tau_gauss <- WLS_gaussian$nugget
+init_tau_sphere <- WLS_spherical$nugget
+
+
+
+
+
+### Fitting the ML estimator for each type of semivariogram
+ML_exponential <- likfit(wolfcamp, cov.model = 'exponential',
+                         trend = '2nd',                          
+                         ini.cov.pars = init_pars_exp, 
+                         nugget = init_tau_exp, 
+                         lik.method = 'ML', 
+                         max.dist = 408)
+
+
+
+ML_gaussian <- likfit(wolfcamp, cov.model = 'gaussian',
+                         trend = '2nd', 
+                         ini.cov.pars = init_pars_gauss, 
+                         nugget = init_tau_gauss, 
+                         lik.method = 'ML', 
+                      max.dist = 408)
+
+
+
+ML_spherical <- likfit(wolfcamp, cov.model = 'spherical',
+                         trend = '2nd', 
+                         ini.cov.pars = init_pars_sphere, 
+                         nugget = init_tau_sphere, 
+                         lik.method = 'ML', 
+                       max.dist = 408)
+
+
+## Generating plot of ML estimators.
+plot(robust_vario)
+lines(ML_spherical, col = 'blue')
+lines(ML_gaussian)
+lines(ML_exponential, col = 'red')
+legend(x = 0, y = 8000, legend = c('Spherical', 'Gaussian', 'Exponential'), 
+       col = c('blue', 'black','red'), 
+       lty=1, cex=0.8)
+
+
+
+
+
+## Fitting the REML estimator for each family of semivariograms.
+REML_exponential <- likfit(wolfcamp, cov.model = 'exponential',
+                         trend = '2nd',                          
+                         ini.cov.pars = init_pars_exp, 
+                         nugget = init_tau_exp, 
+                         lik.method = 'REML', 
+                         max.dist = 408)
+
+
+
+REML_gaussian <- likfit(wolfcamp, cov.model = 'gaussian',
+                      trend = '2nd', 
+                      ini.cov.pars = init_pars_gauss, 
+                      nugget = init_tau_gauss, 
+                      lik.method = 'REML', 
+                      max.dist = 408)
+
+
+
+REML_spherical <- likfit(wolfcamp, cov.model = 'spherical',
+                       trend = '2nd', 
+                       ini.cov.pars = init_pars_sphere, 
+                       nugget = init_tau_sphere, 
+                       lik.method = 'REML', 
+                       max.dist = 408)
+
+
+## Generating the plot of each REML estimator. 
+plot(robust_vario)
+lines(REML_spherical, col = 'blue')
+lines(REML_gaussian)
+lines(REML_exponential, col = 'red')
+legend(x = 0, y = 8000, legend = c('Spherical', 'Gaussian', 'Exponential'), 
+       col = c('blue', 'black','red'), 
+       lty=1, cex=0.8)
