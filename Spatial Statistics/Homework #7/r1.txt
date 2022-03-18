@@ -1,0 +1,60 @@
+_______________________________________________________________________
+> tmp <- quadratcount(cells, nx=2, ny=2 )
+> tmp
+         x
+y         [0,0.5) [0.5,1]
+  [0.5,1]       9      11
+  [0,0.5)      12      10
+> plot(tmp)
+> quadrat.test(cells, nx=2, ny=2, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  cells
+X2 = 0.47619, df = 3, p-value = 0.1518
+alternative hypothesis: two.sided
+Quadrats: 2 by 2 grid of tiles
+_______________________________________________________________________
+
+> tmp1 <- quadratcount(cells, nx=3, ny=3 )
+> tmp1
+               x
+y               [0,0.333) [0.333,0.667) [0.667,1]
+  [0.667,1]             3             6         3
+  [0.333,0.667)         4             7         6
+  [0,0.333)             3             6         4
+> plot(tmp1)
+> quadrat.test(cells, nx=3, ny=3, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  cells
+X2 = 4.2857, df = 8, p-value = 0.3391
+alternative hypothesis: two.sided
+
+Quadrats: 3 by 3 grid of tiles
+Warning message:
+Some expected counts are small; chi^2 approximation may be inaccurate 
+_______________________________________________________________________
+
+> tmp2 <- quadratcount(cells, nx=4, ny=4 )
+> tmp2
+            x
+y            [0,0.25) [0.25,0.5) [0.5,0.75) [0.75,1]
+  [0.75,1]          2          2          2        2
+  [0.5,0.75)        2          3          4        3
+  [0.25,0.5)        3          4          2        3
+  [0,0.25)          2          3          3        2
+> plot(tmp2)
+> quadrat.test(cells, nx=4, ny=4, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  cells
+X2 = 2.9524, df = 15, p-value = 0.0007283
+alternative hypothesis: two.sided
+
+Quadrats: 4 by 4 grid of tiles
+Warning message:
+Some expected counts are small; chi^2 approximation may be inaccurate 
+_______________________________________________________________________
