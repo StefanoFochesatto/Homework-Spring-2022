@@ -1,0 +1,67 @@
+______________________________________________________________________
+> tmp <- quadratcount(redwood, nx=2, ny=2 )
+> tmp
+           x
+y           [0,0.5) [0.5,1]
+  [-0.5,0]       10      17
+  [-1,-0.5)      23      12
+> plot(tmp)
+> quadrat.test(redwood, nx=2, ny=2, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  redwood
+X2 = 6.5161, df = 3, p-value = 0.1781
+alternative hypothesis: two.sided
+
+Quadrats: 2 by 2 grid of tiles
+______________________________________________________________________
+> tmp <- quadratcount(redwood, nx=3, ny=3 )
+> tmp
+                 x
+y                 [0,0.333) [0.333,0.667) [0.667,1]
+  [-0.333,0]              0             6        13
+  [-0.667,-0.333)        13             8         2
+  [-1,-0.667)             5             9         6
+> plot(tmp)
+> quadrat.test(redwood, nx=3, ny=3, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  redwood
+X2 = 22.774, df = 8, p-value = 0.007333
+alternative hypothesis: two.sided
+
+Quadrats: 3 by 3 grid of tiles
+______________________________________________________________________
+> tmp <- quadratcount(redwood, nx=4, ny=4 )
+> tmp
+              x
+y              [0,0.25) [0.25,0.5) [0.5,0.75) [0.75,1]
+  [-0.25,0]           0          5          1        9
+  [-0.5,-0.25)        5          0          7        0
+  [-0.75,-0.5)        8          3          4        2
+  [-1,-0.75)          2         10          1        5
+> plot(tmp)
+> quadrat.test(redwood, nx=4, ny=4, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  redwood
+X2 = 42.258, df = 15, p-value = 0.0004102
+alternative hypothesis: two.sided
+
+Quadrats: 4 by 4 grid of tiles
+Warning message:
+Some expected counts are small; chi^2 approximation may be inaccurate 
+______________________________________________________________________
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+> blackpine = read.table('black_pine_saplings-1.txt', header = TRUE)
+> blackpine <- ppp(blackpine[,1],blackpine[,2])
+_______________________________________________________________________
+> tmp <- quadratcount(blackpine, nx=2, ny=2 )
+> tmp
+         x
+y         [0,0.5) [0.5,1]
+  [0.5,1]      22      17
+  [0,0.5)      13      13
+> plot(tmp)
+> quadrat.test(blackpine, nx=2, ny=2, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  blackpine
+X2 = 3.3692, df = 3, p-value = 0.6762
+alternative hypothesis: two.sided
+
+Quadrats: 2 by 2 grid of tiles
+_______________________________________________________________________
+> tmp <- quadratcount(blackpine, nx=3, ny=3 )
+> tmp
+               x
+y               [0,0.333) [0.333,0.667) [0.667,1]
+  [0.667,1]             6            15         7
+  [0.333,0.667)        10             4         3
+  [0,0.333)             4             8         8
+> plot(tmp)
+> quadrat.test(blackpine, nx=3, ny=3, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  blackpine
+X2 = 15.169, df = 8, p-value = 0.1119
+alternative hypothesis: two.sided
+
+Quadrats: 3 by 3 grid of tiles
+_______________________________________________________________________
+> tmp <- quadratcount(blackpine, nx=4, ny=4 )
+> tmp
+            x
+y            [0,0.25) [0.25,0.5) [0.5,0.75) [0.75,1]
+  [0.75,1]          4          8          4        4
+  [0.5,0.75)        5          5          5        4
+  [0.25,0.5)        4          1          2        0
+  [0,0.25)          2          6          6        5
+> plot(tmp)
+> quadrat.test(blackpine, nx=4, ny=4, alternative="two.sided")
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  blackpine
+X2 = 15, df = 15, p-value = 0.9028
+alternative hypothesis: two.sided
+
+Quadrats: 4 by 4 grid of tiles
+Warning message:
+Some expected counts are small; chi^2 approximation may be inaccurate 
+_______________________________________________________________________
