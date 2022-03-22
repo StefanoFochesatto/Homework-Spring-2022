@@ -1,0 +1,4 @@
+## Reading in Data
+dat <- read.csv('WoodySpecies.csv', header=TRUE)
+dat_t <- t(dat[,-1])
+colnames(dat_t) <- dat[,1]

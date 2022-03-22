@@ -1,0 +1,33 @@
+library(ade4)
+
+## Generating Distance
+D <- dist(dat)
+## Generating Dendrogram
+tmp <- hclust(D, method="single")
+tmp2 <- hclust(D, method="complete", )
+
+## Colored Clustered Dendrogram
+library(factoextra)
+cluster1 <- fviz_dend(tmp, cex = 0.4,
+          k = 2, # Cut in four groups
+          palette = "jco", # Color palette
+)
+plot(cluster1)
+
+cluster2 <- fviz_dend(tmp2, cex = 0.4,
+                      k = 2, # Cut in four groups
+                      palette = "jco", # Color palette
+)
+plot(cluster2)
+
+## Cluster Plot to show same cluster
+library(dendextend)
+cut1 <- cutree(tmp, k = 2)
+cut2 <- cutree(tmp2, k = 2)
+plot(cut2, cex = 1.25, ylab = 'Cluster')
+points(cut1, col = 'blue',pch = 4, cex = .75 )
+legend(0,1.5, c('Single', 'Complete'), col = c('black', 'blue'), pch = c(1, 4))
+
+## Checking if the order is the same
+isTRUE(tmp$order == tmp2$order)
+## [1] FALSE

@@ -1,0 +1,11 @@
+## Simulating Clusters and Computing rSquared.
+rsquared <- rep(NA, 10)
+for (i in 1:10){  
+  tmp <- kmeans(dat, centers = i)
+  rsquared[i] <- tmp$betweenss/tmp$totss
+}
+plot(rsquared, type="l", lwd=2, xlab = '# of Clusters')
+barplot((rsquared[2:10] - rsquared[1:9]), names.arg = seq(2,10),
+        ylab = 'Proportion of Var Explained (r^2)', 
+        xlab = 'Number of Clusters' )
+
