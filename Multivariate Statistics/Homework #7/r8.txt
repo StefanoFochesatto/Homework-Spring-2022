@@ -1,0 +1,6 @@
+D <- dist(dat_t)
+HclustAverage <- hclust(D, method = 'average')
+HclustSingle <- hclust(D, method = 'single')
+tanglegram(HclustSingle, HclustAverage)
+cor_cophenetic(HclustAverage, HclustSingle)
+## [1] 0.9706721

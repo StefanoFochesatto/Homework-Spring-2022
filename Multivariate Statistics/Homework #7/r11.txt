@@ -1,0 +1,9 @@
+D <- dist(WaterDat)
+AgglomerativeClust <- hclust(D, method = 'average')
+AgglomerativeClust <- cutree(AgglomerativeClust, k = 2)
+AgglomerativeClust <- AgglomerativeClust - 1
+
+aClassification <- AgglomerativeClust == TrueClustering
+length(aClassification[aClassification == TRUE])
+length(aClassification)
+## 1188/2011 classified correctly

@@ -1,0 +1,15 @@
+D <- dist(dat_t)
+library(cluster)
+res.diana <- diana(D, stand = TRUE)
+
+# Plot the dendrogram
+library(factoextra)
+fviz_dend(res.diana, cex = 0.5,
+          k = 4, # Cut in four groups
+          palette = "jco" # Color palette
+)
+
+tanglegram(as.dendrogram(res.diana),  HclustAverage)
+cor_cophenetic(as.dendrogram(res.diana),  HclustAverage)
+## [1] 0.8989625
+

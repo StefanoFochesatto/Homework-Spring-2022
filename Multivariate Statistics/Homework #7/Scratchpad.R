@@ -38,7 +38,7 @@ library(ade4)
 D <- dist(dat)
 ## Generating Dendogram
 tmp <- hclust(D, method="single")
-tmp2 <- hclust(D, method="complete", )
+tmp2 <- hclust(D, method="complete")
 
 ## Colored Clustered Dendogram
 library(factoextra)
@@ -78,7 +78,7 @@ colnames(dat_t) <- dat[,1]
 ## Simulating Clusters and Computing rSquared.
 rsquared <- rep(NA, 10)
 for (i in 1:10){  
-  tmp <- kmeans(dat, centers = i)
+  tmp <- kmeans(dat_t, centers = i)
   rsquared[i] <- tmp$betweenss/tmp$totss
 }
 plot(rsquared, type="l", lwd=2, xlab = '# of Clusters')
@@ -86,15 +86,118 @@ barplot((rsquared[2:10] - rsquared[1:9]), names.arg = seq(2,10),
         ylab = 'Proportion of Var Explained (r^2)', 
         xlab = 'Number of Clusters' )
 
+kmeansWoodySpecies <- kmeans(dat_t, centers = 4)
 
 
 
+## Generating Distance
+D <- dist(dat_t)
+
+
+## Generating Dendogram
+plot(HclustWoodySpecies)
+cluster <- fviz_dend(HclustWoodySpecies,
+                      k = 3, # Cut in three groups
+                      palette = "jco", # Color palette
+)
+
+plot(cluster)
+cluster <- fviz_dend(HclustWoodySpecies,
+                     k = 4, # Cut in four groups
+                     palette = "jco", # Color palette
+)
+plot(cluster)
+## Comparing Clusters
+kmeansWoodySpecies <- kmeans(dat_t, centers = 4)
+> kmeansWoodySpecies$cluster
+
+Cypress.Creek    Crooked.Creek      Forked.Lake Cucumber.Creek.l 
+3                4                4                4 
+Cucumber.Creek2      Refuge.East      Refuge.West            Caney 
+4                4                4                2 
+Refuge.North      H.shoe.Lake     Brick.Slough      Grassy.Lake 
+2                1                1                1 
+Buzzards.Roost      Holly.Creek 
+1                1 
+
+
+cutCompare <- cutree(HclustWoodySpecies, k = 4)
+
+> cutCompare
+Cypress.Creek    Crooked.Creek      Forked.Lake Cucumber.Creek.l 
+1                2                2                2 
+Cucumber.Creek2      Refuge.East      Refuge.West            Caney 
+2                2                2                3 
+Refuge.North      H.shoe.Lake     Brick.Slough      Grassy.Lake 
+3                4                4                4 
+Buzzards.Roost      Holly.Creek 
+4                4 
+
+D <- dist(dat_t)
+ClustD <- cophenetic(HclustWoodySpecies)
+cor(ClustD, D)
+## [1] 0.8223099
+
+
+D <- dist(dat_t)
+HclustAverage <- hclust(D, method = 'average')
+HclustSingle <- hclust(D, method = 'single')
+tanglegram(HclustSingle, HclustAverage)
+cor_cophenetic(HclustAverage, HclustSingle)
+## [1] 0.9706721
 
 
 
+D <- dist(dat_t)
+library(cluster)
+res.diana <- diana(D, stand = TRUE)
+
+# Plot the dendrogram
+library(factoextra)
+fviz_dend(res.diana, cex = 0.5,
+          k = 4, # Cut in four groups
+          palette = "jco" # Color palette
+)
+
+tanglegram(as.dendrogram(res.diana),  HclustAverage)
+cor_cophenetic(as.dendrogram(res.diana),  HclustAverage)
+## [1] 0.8989625
 
 
 
+WaterDat <- read.csv('water_potability.csv', header=TRUE)
+WaterDat <- na.omit(WaterDat)
+TrueClustering <- WaterDat[, length(WaterDat)]
+WaterDat <- WaterDat[, -length(WaterDat)]
 
+rsquared <- rep(NA, 10)
+for (i in 1:10){  
+  tmp <- kmeans(WaterDat, centers = i)
+  rsquared[i] <- tmp$betweenss/tmp$totss
+}
+plot(rsquared, type="l", lwd=2, xlab = '# of Clusters')
+barplot((rsquared[2:10] - rsquared[1:9]), names.arg = seq(2,10),
+        ylab = 'Proportion of Var Explained (r^2)', 
+        xlab = 'Number of Clusters' )
+
+WaterKmeansClust <- kmeans(WaterDat, centers = 2)
+WaterKmeansClust <- WaterKmeansClust$cluster - 1
+
+
+kClassification <- WaterKmeansClust == TrueClustering
+length(kClassification[kClassification == TRUE])
+length(kClassification)
+## 1062/2011 classified correctly.
+
+
+D <- dist(WaterDat)
+AgglomerativeClust <- hclust(D, method = 'average')
+AgglomerativeClust <- cutree(AgglomerativeClust, k = 2)
+AgglomerativeClust <- AgglomerativeClust - 1
+
+aClassification <- AgglomerativeClust == TrueClustering
+length(aClassification[aClassification == TRUE])
+length(aClassification)
+## 1188/2011 classified correctly
 
 

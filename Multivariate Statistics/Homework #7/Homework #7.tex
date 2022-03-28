@@ -114,7 +114,7 @@
 
 
 
-\doclabel{Stat 461: Homework 6}
+\doclabel{Stat 461: Homework 7}
 \docauthor{Stefano Fochesatto}
 \docdate{\today}
 
@@ -203,7 +203,7 @@
   \end{enumerate}
 
 \end{exercise}
-\vspace{.15in}
+\vspace{.5in}
 
 \begin{exercise}{2}
   \begin{enumerate}
@@ -242,19 +242,211 @@
     \solution The kmeans algorithm begins by randomly assigning the data to $n$(hyperparameter) different clusters. Then the centroid of each cluster is computed. 
     The data are reassigned to the same cluster as the nearest centroid. New centroids are computed and the data is reassigned again recursively. Eventually this algorithm 
     converges, and sometimes it shows sensitivity to initial conditions which is why kmeans() runs several randomized instances of this algorithm.
-  \end{enumerate}
   \vspace{.15in}
 
 
   \item[d.] Now cluster the data using any hierarchical clustering method you wish. Don't forget to think about a reasonable distance measure. Do you get similar clusters to when you used kmeans?\\
-   
+  \solution Note that the data are stated to be plant densities from each 10 $m^2$ plot. With this mind I think an average linkage and normal
+  euclidean distance might be the most appropriate, since are data are already an average in a sense, as opposed to actual plant counts. Generating the dendrogram we get the following, 
+  
+  \begin{figure}[H]
+    \begin{center}
+      \caption{Dendrogram for Woody Species Data from hclust() and 'average' Linkage}
+    \includegraphics[width = .70\textwidth]{Rplot06.png}
+    \end{center}
+  \end{figure}
+  
+  \begin{figure}[H]
+    \begin{center}
+      \caption{Cut with 3 Clusters (what was done in the paper.)}
+    \includegraphics[width = .70\textwidth]{Rplot07.png}
+    \end{center}
+  \end{figure}
 
+    \begin{figure}[H]
+      \begin{center}
+        \caption{Cut with 4 Clusters}
+      \includegraphics[width = .70\textwidth]{Rplot08.png}
+      \end{center}
+  \end{figure}
+
+  \textbf{Code:}
+  \begin{center}
+  \lstinputlisting[basicstyle = \footnotesize]{r5.txt}
+  \end{center}
+
+  Comparing the two clustering methods, kmeans and the average linkage euclidean distance agglomerative hierarchical clustering produced the same clusters. This 
+  can be seen by reading the print out and noting that the observations are grouped in the same way (had a hard time visualizing this in a systematic way since the methods produced different labels for the clusters).
+  
+
+  \begin{footnotesize}
+    \begin{verbatim}
+      kmeansWoodySpecies <- kmeans(dat_t, centers = 4)
+        > kmeansWoodySpecies$cluster
+        Cypress.Creek    Crooked.Creek      Forked.Lake Cucumber.Creek.l 
+        3                4                4                4 
+        Cucumber.Creek2      Refuge.East      Refuge.West            Caney 
+        4                4                4                2 
+        Refuge.North      H.shoe.Lake     Brick.Slough      Grassy.Lake 
+        2                1                1                1 
+        Buzzards.Roost      Holly.Creek 
+        1                1 
+    
+    
+      cutCompare <- cutree(HclustWoodySpecies, k = 4)
+        > cutCompare
+        Cypress.Creek    Crooked.Creek      Forked.Lake Cucumber.Creek.l 
+        1                2                2                2 
+        Cucumber.Creek2      Refuge.East      Refuge.West            Caney 
+        2                2                2                3 
+        Refuge.North      H.shoe.Lake     Brick.Slough      Grassy.Lake 
+        3                4                4                4 
+        Buzzards.Roost      Holly.Creek 
+        4                4 
+    \end{verbatim}
+  \end{footnotesize}
+  \vspace{.25in}
+
+  \item[e.] Use the cut() function to cut the tree at some level and plot the part of the dendrogram above that cut.\\
+  \solution 
+
+  \begin{figure}[H]
+    \begin{center}
+      \caption{Cut() with 4 Clusters}
+    \includegraphics[width = .70\textwidth]{Rplot09.png}
+    \end{center}
+\end{figure}
+
+  \textbf{Code:}
+  \begin{center}
+  \lstinputlisting[basicstyle = \footnotesize]{r6.txt}
+  \end{center}
+
+\end{enumerate}
   
 \end{exercise}
+\vspace{.5in}
+
+
+\begin{exercise}{3} Continue the analysis from the last problem (WoodySpecies data). Here you will look at cophenetic correlation and tanglegrams.\\
+  \begin{enumerate}
+    \item[a.] What is cophenetic correlation? What is it used for?\\
+    \solution  A cophenetic distance, is the distance matrix for a set of data generated from the hierarchical cluster. Cophenetic correlation is what we use 
+    to compare the structure of the original distance matrix of the data, and the clustered distance of our data, similar to how a mantel test would be used.
+    \vspace{.15in}
+    
+    
+    \item[b.] Using the dendrogram from part (d), problem two, find the correlation between the cophenetic distance matrix and the regular distance matrix.\\
+    \solution  \\
+    \textbf{Code:}
+    \begin{center}
+    \lstinputlisting[basicstyle = \footnotesize]{r7.txt}
+    \end{center}
+    \vspace{.15in}
+
+    \item[c.] You should now compute another hierarchical clustering using a different method from what you used in the 
+    last problem and save the dendrogram. Using the tanglegram() function in dendextend package, examine whether this new dendrogram give similar clusters to the 
+    dendrogram from the last problem.\\ 
+    \solution Computing a new clustering using single linkage, and generating a tanglegram we get the following, 
+    \begin{figure}[H]
+      \begin{center}
+        \caption{Tanglegram: Average Linkage vs. Single Linkage}
+      \includegraphics[width = \textwidth]{Rplot10.png}
+      \end{center}
+  \end{figure}
+  \textbf{Code:}
+  \begin{center}
+  \lstinputlisting[basicstyle = \footnotesize]{r8.txt}
+  \end{center}
+  From the tanglegram we can see that really the only observations that really separated between the two 
+  clustering paradigms where Cucumber.Creek1 and Cucumber.Creek2. Computing the cophenetic correlation we get a value of .97 which makes 
+  sense given the tanglegram, shows us generally the same clusters. 
+  \end{enumerate}
+\end{exercise}
+\vspace{.5in}
 
 
 
+\begin{exercise}{4} 
+  \begin{enumerate}
+    \item[a.] What is a divisive hierarchical technique, as opposed to an agglomerative hierarchical technique?\\
+    \solution Divisive clustering begins by partitioning the data into one partition, then uses some rule to split the partition into two. This is then repeated 
+    until all the data is divided into their own partitions(like decision trees). Agglomerative clustering goes in the other direction by starting with each data in their own partition 
+    and using some rule to join partitions together until we form a single partition. 
+    \vspace{.15in}
+    
+    \item[b.] Use code similar to the code below to run DIANA on the Woody Species data.\\
+    \begin{footnotesize}
+      \begin{verbatim}
+      library(cluster)
+      res.diana <- diana(distmat, stand = TRUE)
+      
+      # Plot the dendrogram
+      library(factoextra)
+      fviz_dend(res.diana, cex = 0.5,
+          k = 4, # Cut in four groups
+          palette = "jco" # Color palette
+          )
+      \end{verbatim}
+      \end{footnotesize}
+      \solution Running the code to generate the plot for the divisive clustering paradigm, 
 
+      \begin{figure}[H]
+        \begin{center}
+          \caption{Divisive Clustering of WoodySpecies Data.}
+        \includegraphics[width = .70\textwidth]{Rplot11.png}
+        \end{center}
+    \end{figure}
+
+    Generating a tanglegram, and computing the cophenetic correlation to compare the clustering to the average linkage agglomerative clustering we found very similar clustering. 
+    \begin{figure}[H]
+      \begin{center}
+        \caption{Divisive vs Agglomerative Clustering.}
+      \includegraphics[width = .70\textwidth]{Rplot12.png}
+      \end{center}
+    \end{figure}
+
+      \textbf{Code:}
+      \begin{center}
+      \lstinputlisting[basicstyle = \footnotesize]{r9.txt}
+      \end{center}
+    \end{enumerate}
+\end{exercise}
+
+\vspace{.5in}
+
+
+\begin{exercise}{5} Somewhere, find a dataset that you are interested in that compares multiple sites, countries, etc. Choose your favorite clustering method, 
+  then use it to cluster the dataset. How many clusters did you get? why did you pick that number of clusters? Do you think your approach did a good job of clustering?\\
+  \solution The data I decided to use comes from Kaggle and it contains information about water quality from 3276 different bodies of water. The goal of the data is to be able to predict the 
+  potability of water form metrics like pH, Hardness, Conductivity, Sulfates, and several other predictors. The data also contains labels for each of the observations so we do have 
+  a true clustering to compare our methods to. \\
+  A kmeans clustering showed that the data contains mainly 2 clusters. The following plots of cumulative and accumulative rsquared show that most of the variance 
+  is explained by 2 groups. The two cluster correctly classified 1062 of the 2011 usable observations, which is about as good as randomly assigning labels. 
+  \begin{figure}[H]
+    \begin{center}
+      \caption{Cumulative RSquared from Kmeans Analysis on WaterData}
+    \includegraphics[width = .70\textwidth]{Rplot13.png}
+    \end{center}
+\end{figure}
+\begin{figure}[H]
+  \begin{center}
+    \caption{Accumulative RSquared from Kmeans Analysis on WaterData}
+  \includegraphics[width = .70\textwidth]{Rplot14.png}
+  \end{center}
+\end{figure}
+\textbf{Code:}
+\begin{center}
+\lstinputlisting[basicstyle = \footnotesize]{r10.txt}
+\end{center}
+
+Things don't get much better when we try the agglomerative hierarchical clustering. Generating the dendrogram for this data is unhelpful (too much data), it shows the same thing as 
+the kmeans plots; that two clusters explain a majority of the variance. With the hierarchical clustering we correctly classified 1188 of the 2011 observations, again about as good as random. \\
+\textbf{Code:}
+\begin{center}
+\lstinputlisting[basicstyle = \footnotesize]{r11.txt}
+\end{center}
+\end{exercise}
 
 
 

@@ -1,0 +1,18 @@
+## Generating Distance
+D <- dist(dat_t)
+
+HclustWoodySpecies <- hclust(D, method = 'average')
+
+## Generating Dendogram
+plot(HclustWoodySpecies)
+cluster <- fviz_dend(HclustWoodySpecies,
+                      k = 3, # Cut in three groups
+                      palette = "jco", # Color palette
+)
+
+plot(cluster)
+cluster <- fviz_dend(HclustWoodySpecies,
+                     k = 4, # Cut in four groups
+                     palette = "jco", # Color palette
+)
+plot(cluster)

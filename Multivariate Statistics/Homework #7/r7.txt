@@ -1,0 +1,4 @@
+D <- dist(dat_t)
+ClustD <- cophenetic(HclustWoodySpecies)
+cor(ClustD, D)
+## [1] 0.8223099

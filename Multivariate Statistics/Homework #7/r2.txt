@@ -9,13 +9,13 @@ tmp2 <- hclust(D, method="complete", )
 ## Colored Clustered Dendrogram
 library(factoextra)
 cluster1 <- fviz_dend(tmp, cex = 0.4,
-          k = 2, # Cut in four groups
+          k = 2, # Cut in 2 groups
           palette = "jco", # Color palette
 )
 plot(cluster1)
 
 cluster2 <- fviz_dend(tmp2, cex = 0.4,
-                      k = 2, # Cut in four groups
+                      k = 2, # Cut in 2 groups
                       palette = "jco", # Color palette
 )
 plot(cluster2)

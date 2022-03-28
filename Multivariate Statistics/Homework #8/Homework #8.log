@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2022.1.24)  21 MAR 2022 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2022.1.24)  26 MAR 2022 20:05
 entering extended mode
-**"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Homework #7.tex"
-("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Homework #7.tex"
+**"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
+("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03> (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -325,8 +325,8 @@ LaTeX Info: Redefining \openbox on input line 1064.
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 121.
  (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux")
-\openout1 = `"Homework #7.aux"'.
+) ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux")
+\openout1 = `"Homework #8.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 121.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 121.
@@ -415,236 +415,89 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 122.
-LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 124.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd
-File: ot1txtt.fd 2000/12/15 v3.1
-)
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 135.
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 135.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 135.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 135.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
-)
-<Rplot01.png, id=1, 580.1675pt x 484.81125pt>
-File: Rplot01.png Graphic file (type png)
-<use Rplot01.png>
-Package pdftex.def Info: Rplot01.png  used on input line 140.
-(pdftex.def)             Requested size: 281.85036pt x 235.52524pt.
-<Dat3d.png, id=3, 598.73688pt x 636.3775pt>
-File: Dat3d.png Graphic file (type png)
-<use Dat3d.png>
-Package pdftex.def Info: Dat3d.png  used on input line 149.
-(pdftex.def)             Requested size: 346.89732pt x 368.7108pt.
-<Dat3DClustered.png, id=4, 589.20125pt x 600.2425pt>
-File: Dat3DClustered.png Graphic file (type png)
-<use Dat3DClustered.png>
-Package pdftex.def Info: Dat3DClustered.png  used on input line 155.
-(pdftex.def)             Requested size: 346.89732pt x 353.39813pt.
- [1{C:/Users/StefanoFochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
- <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot01.png>] [2 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Dat3d.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<Rplot.png, id=18, 682.55pt x 606.265pt>
-File: Rplot.png Graphic file (type png)
-<use Rplot.png>
-Package pdftex.def Info: Rplot.png  used on input line 167.
-(pdftex.def)             Requested size: 303.53267pt x 269.60669pt.
-<Rplot02.png, id=19, 677.53125pt x 612.2875pt>
-File: Rplot02.png Graphic file (type png)
-<use Rplot02.png>
-Package pdftex.def Info: Rplot02.png  used on input line 173.
-(pdftex.def)             Requested size: 303.53267pt x 274.31227pt.
-[3 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Dat3DClustered.png>]
-<Rplot03.png, id=24, 962.59625pt x 597.23125pt>
-File: Rplot03.png Graphic file (type png)
-<use Rplot03.png>
-Package pdftex.def Info: Rplot03.png  used on input line 180.
-(pdftex.def)             Requested size: 433.62001pt x 269.03407pt.
- [4 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot02.png>] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt"
-LaTeX Font Info:    Trying to load font information for OML+txr on input line 4.
+("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt"
+LaTeX Font Info:    Trying to load font information for OML+txr on input line 2.
  (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 4.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 2.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2.
  (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [5 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot03.png>]
-Overfull \hbox (69.7595pt too wide) in paragraph at lines 29--31
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+)
+Overfull \hbox (27.75908pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 136.
+(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 136.
+ (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 136.
+ (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 136.
+ (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+<Rplot01.png, id=1, 636.12656pt x 482.55281pt>
+File: Rplot01.png Graphic file (type png)
+<use Rplot01.png>
+Package pdftex.def Info: Rplot01.png  used on input line 141.
+(pdftex.def)             Requested size: 433.62001pt x 328.93414pt.
+ [1{C:/Users/StefanoFochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt")
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-<Rplot04.png, id=37, 632.3625pt x 469.755pt>
-File: Rplot04.png Graphic file (type png)
-<use Rplot04.png>
-Package pdftex.def Info: Rplot04.png  used on input line 223.
-(pdftex.def)             Requested size: 303.53267pt x 225.487pt.
-<Rplot05.png, id=38, 666.23906pt x 493.845pt>
-File: Rplot05.png Graphic file (type png)
-<use Rplot05.png>
-Package pdftex.def Info: Rplot05.png  used on input line 229.
-(pdftex.def)             Requested size: 303.53267pt x 224.9937pt.
-[6] [7 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot04.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot05.png>] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt"
+] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt"
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 3.
  (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 3.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
+Overfull \hbox (15.75896pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
-
+[2 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Rplot01.png>]
+Overfull \hbox (183.76067pt too wide) in paragraph at lines 18--19
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<Rplot06.png, id=49, 526.96875pt x 602.25pt>
-File: Rplot06.png Graphic file (type png)
-<use Rplot06.png>
-Package pdftex.def Info: Rplot06.png  used on input line 255.
-(pdftex.def)             Requested size: 303.53267pt x 346.90675pt.
-[8]
-<Rplot07.png, id=53, 526.96875pt x 602.25pt>
-File: Rplot07.png Graphic file (type png)
-<use Rplot07.png>
-Package pdftex.def Info: Rplot07.png  used on input line 262.
-(pdftex.def)             Requested size: 303.53267pt x 346.90675pt.
- [9 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot06.png>]
-<Rplot08.png, id=58, 526.96875pt x 602.25pt>
-File: Rplot08.png Graphic file (type png)
-<use Rplot08.png>
-Package pdftex.def Info: Rplot08.png  used on input line 269.
-(pdftex.def)             Requested size: 303.53267pt x 346.90675pt.
- [10 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot07.png>] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt") [11 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot08.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-<Rplot09.png, id=67, 407.27156pt x 331.99031pt>
-File: Rplot09.png Graphic file (type png)
-<use Rplot09.png>
-Package pdftex.def Info: Rplot09.png  used on input line 316.
-(pdftex.def)             Requested size: 303.53267pt x 247.43692pt.
-[12] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt")
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--342
-
- []
-
-[13 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot09.png>] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt")
-Underfull \hbox (badness 10000) in paragraph at lines 347--350
-
- []
-
-<Rplot10.png, id=76, 942.52126pt x 417.81094pt>
-File: Rplot10.png Graphic file (type png)
-<use Rplot10.png>
-Package pdftex.def Info: Rplot10.png  used on input line 354.
-(pdftex.def)             Requested size: 433.62001pt x 192.22086pt.
-("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt") [14 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot10.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--380
-
- []
-
-<Rplot11.png, id=81, 526.96875pt x 602.25pt>
-File: Rplot11.png Graphic file (type png)
-<use Rplot11.png>
-Package pdftex.def Info: Rplot11.png  used on input line 397.
-(pdftex.def)             Requested size: 303.53267pt x 346.90675pt.
-[15]
-<Rplot12.png, id=85, 1132.98282pt x 379.4175pt>
-File: Rplot12.png Graphic file (type png)
-<use Rplot12.png>
-Package pdftex.def Info: Rplot12.png  used on input line 405.
-(pdftex.def)             Requested size: 303.53267pt x 101.64514pt.
- ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt" [16 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot11.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot12.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 419--421
-
- []
-
-<Rplot13.png, id=91, 752.8125pt x 526.96875pt>
-File: Rplot13.png Graphic file (type png)
-<use Rplot13.png>
-Package pdftex.def Info: Rplot13.png  used on input line 429.
-(pdftex.def)             Requested size: 303.53267pt x 212.48038pt.
-<Rplot14.png, id=92, 752.8125pt x 526.96875pt>
-File: Rplot14.png Graphic file (type png)
-<use Rplot14.png>
-Package pdftex.def Info: Rplot14.png  used on input line 435.
-(pdftex.def)             Requested size: 303.53267pt x 212.48038pt.
-[17] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt" [18 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot13.png> <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #7/Rplot14.png>]) ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt") [19] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux") ) 
+) [3] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux") ) 
 Here is how much of TeX's memory you used:
- 7464 strings out of 479618
- 115896 string characters out of 2859326
- 554923 words of memory out of 3000000
- 24469 multiletter control sequences out of 15000+200000
- 424564 words of font info for 77 fonts, out of 3000000 for 9000
+ 7302 strings out of 479618
+ 112282 string characters out of 2859326
+ 546923 words of memory out of 3000000
+ 24353 multiletter control sequences out of 15000+200000
+ 422972 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,11n,89p,390b,1882s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.pdf" (19 pages, 319898 bytes).
+ 81i,11n,89p,419b,1873s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.pdf" (3 pages, 53806 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

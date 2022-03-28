@@ -1,0 +1,13 @@
+## Performing one-out cross validation
+CV_classifications <- rep(NA,1000)
+for(i in 1:1000){
+  tmp_rule <- D2.disc(data=data[-i,2:8],
+                      grouping=data[-i,1])
+  CV_classifications[i] <- predict(tmp_rule,
+                                   newdata=data[i,2:8])$class
+}
+## Generating confusion matrix
+table(data[,1], CV_classifications - 1)
+#      0   1
+#  0 137 163
+#  1 328 372

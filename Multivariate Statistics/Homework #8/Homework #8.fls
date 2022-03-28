@@ -1,7 +1,7 @@
-PWD c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7
+PWD c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8
 INPUT C:\Users\StefanoFochesatto\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.tex
-OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.log
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.tex
+OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.log
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -402,10 +402,10 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux
-OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux
+OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxmi.fd
@@ -438,119 +438,13 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\epstopd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txb.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ot1txtt.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txtt.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.pdf
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot01.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3d.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Dat3DClustered.png
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\MiKTeX\pdftex\config\pdftex.map
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txb.vf
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txmi.vf
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot02.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot03.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omltxr.fd
@@ -561,6 +455,66 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\ts1txr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\tcxr.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txr.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txex.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsya.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsya.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyb.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyb.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxmia.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txmia.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\utxsyc.fd
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsyc.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txexa.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+OUTPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.pdf
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Rplot01.png
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\MiKTeX\pdftex\config\pdftex.map
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txb.vf
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmb.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxb.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txr.vf
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmr.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxr.tfm
@@ -569,143 +523,21 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\tcxr.vf
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtcxr.tfm
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r3.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot04.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot05.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r4.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex\latex\txfonts\omstxr.fd
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\txsy.tfm
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot06.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot07.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot08.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r5.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot09.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r6.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r7.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot10.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r8.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot11.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot12.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r9.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot13.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Rplot14.png
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r10.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\r11.txt
-INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #7\Homework #7.aux
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\vf\public\txfonts\txmi.vf
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxmi.tfm
+INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\tfm\public\txfonts\rtxptmri.tfm
+INPUT c:\Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtcxr.pfb
@@ -715,8 +547,6 @@ INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\publi
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\rtxr.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsy.pfb
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txtt.pfb
-INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txtt.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb

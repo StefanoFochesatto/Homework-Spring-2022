@@ -1,7 +1,7 @@
 ## Simulating Clusters and Computing rSquared.
 rsquared <- rep(NA, 10)
 for (i in 1:10){  
-  tmp <- kmeans(dat, centers = i)
+  tmp <- kmeans(dat_t, centers = i)
   rsquared[i] <- tmp$betweenss/tmp$totss
 }
 plot(rsquared, type="l", lwd=2, xlab = '# of Clusters')

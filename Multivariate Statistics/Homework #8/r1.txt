@@ -1,0 +1,20 @@
+## Reading in the data. 
+data <- read.csv('german_credit_data.csv', header = TRUE)
+
+## Note that checking and saving account variable contains a lot of NAs. 
+length(na.omit(data$Saving.accounts))
+# [1] 817
+length(na.omit(data$Checking.account))
+# [1] 606
+length(na.omit(data)[,1])
+
+## Dropping these two columns removes all NAs. Perhaps we 
+## can explore a method more robust to NA, like decision trees
+## and bring that data in. 
+data <- data[, -c(1,7,8)]
+
+## Turning categorical variables into factors. 
+data$Sex <- as.numeric(as.factor(data$Sex))
+data$Housing <- as.numeric(as.factor(data$Housing))
+data$Purpose <- as.numeric(as.factor(data$Purpose))
+

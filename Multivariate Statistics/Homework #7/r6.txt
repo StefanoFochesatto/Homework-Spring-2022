@@ -1,0 +1,2 @@
+PrunedTree <- cut(as.dendrogram(HclustWoodySpecies), h = 115)
+plot(PrunedTree$upper)

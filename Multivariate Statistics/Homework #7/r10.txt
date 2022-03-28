@@ -1,0 +1,27 @@
+## Reading the data in 
+WaterDat <- read.csv('water_potability.csv', header=TRUE)
+WaterDat <- na.omit(WaterDat)
+## Pulling true clustering
+TrueClustering <- WaterDat[, length(WaterDat)]
+## Removing Labels from the data/
+WaterDat <- WaterDat[, -length(WaterDat)]
+
+##Generating Plots
+rsquared <- rep(NA, 10)
+for (i in 1:10){  
+  tmp <- kmeans(WaterDat, centers = i)
+  rsquared[i] <- tmp$betweenss/tmp$totss
+}
+plot(rsquared, type="l", lwd=2, xlab = '# of Clusters')
+barplot((rsquared[2:10] - rsquared[1:9]), names.arg = seq(2,10),
+        ylab = 'Proportion of Var Explained (r^2)', 
+        xlab = 'Number of Clusters' )
+
+## Computing Classification rate
+WaterKmeansClust <- kmeans(WaterDat, centers = 2)
+WaterKmeansClust <- WaterKmeansClust$cluster - 1
+
+kClassification <- WaterKmeansClust == TrueClustering
+length(kClassification[kClassification == TRUE])
+length(kClassification)
+## 1062/2011 classified correctly.
