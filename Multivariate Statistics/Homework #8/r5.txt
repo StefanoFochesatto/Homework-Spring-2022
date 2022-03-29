@@ -1,0 +1,33 @@
+library(MASS)
+classifier <- lda(data[,1] ~.  ,data = data[,-1])
+
+library(caret)
+confusionMatrix(factor(data[,1]),
+                predict(classifier)$class)
+_____________________________________________
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0   0 300
+         1   0 700
+                                          
+               Accuracy : 0.7             
+                 95% CI : (0.6705, 0.7283)
+    No Information Rate : 1               
+    P-Value [Acc > NIR] : 1               
+                                          
+                  Kappa : 0               
+                                          
+ Mcnemar's Test P-Value : <2e-16          
+                                          
+            Sensitivity :  NA             
+            Specificity : 0.7             
+         Pos Pred Value :  NA             
+         Neg Pred Value :  NA             
+             Prevalence : 0.0             
+         Detection Rate : 0.0             
+   Detection Prevalence : 0.3             
+      Balanced Accuracy :  NA             
+                                          
+       'Positive' Class : 0   

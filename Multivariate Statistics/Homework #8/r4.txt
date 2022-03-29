@@ -1,0 +1,19 @@
+## Split the data and cluster using knn
+RandomSplits <- data.frame(matrix(ncol = 100, nrow = 50))
+for (j in 1:100){
+  split <- sample(c(rep(0, 0.5 * nrow(data)), rep(1, 0.5 * nrow(data))))
+  test_data <- data[split == 1,]
+  train_data <- data[split == 0,]
+  MissClassErrorTest <- rep(NA,50)
+  for(i in 1:50){
+    Pred_test <- knn(train = train_data[,-1],
+                    test = test_data[,-1], 
+                    cl = train_data[,1], k = i)
+    MissClassErrorTest[i] <- (1 - (sum(diag(table(test_data[,1], Pred_test)))/500))
+  }
+  RandomSplits[,j] <- MissClassErrorTest
+}
+
+plot(rowMeans(RandomSplits), col='red', 
+     xlab = 'Number of Neighbors', 
+     ylab = 'Mean Misclassification Error')

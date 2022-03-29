@@ -1,27 +1,30 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2022.1.24)  26 MAR 2022 20:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.2.8)  28 MAR 2022 21:11
 entering extended mode
-**"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
-("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-01-09> xparse <2020-03-03> (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@section=\count178
-\c@subsection=\count179
-\c@subsubsection=\count180
-\c@paragraph=\count181
-\c@subparagraph=\count182
-\c@figure=\count183
-\c@table=\count184
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
@@ -29,30 +32,30 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen139
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count185
+\inf@bad=\count187
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count186
-\leftroot@=\count187
+\uproot@=\count188
+\leftroot@=\count189
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count188
-\DOTSCASE@=\count189
+\classnum@=\count190
+\DOTSCASE@=\count191
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -61,15 +64,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count190
-\c@MaxMatrixCols=\count191
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
 \dotsspace@=\muskip16
-\c@parentequation=\count192
-\dspbrk@lvl=\count193
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
 \tag@help=\toks17
-\row@=\count194
-\column@=\count195
-\maxfields@=\count196
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
 \andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -83,7 +86,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks21
 \thm@bodyfont=\toks22
@@ -94,19 +97,19 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip53
 \thm@headsep=\skip54
 \dth@everypar=\toks26
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks27
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count197
-\Gm@cntv=\count198
-\c@Gm@tempcnt=\count199
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
 \Gm@bindingoffset=\dimen148
 \Gm@wd@mp=\dimen149
 \Gm@odd@mp=\dimen150
@@ -116,8 +119,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen154
 \Gm@layoutvoffset=\dimen155
 \Gm@dimlist=\toks28
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@O@elh=\skip56
 \f@nch@O@erh=\skip57
@@ -127,93 +130,91 @@ Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
 \f@nch@O@erf=\skip61
 \f@nch@O@olf=\skip62
 \f@nch@O@orf=\skip63
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\enumerate.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks29
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count266
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count268
 \lst@gtempboxa=\box49
 \lst@token=\toks30
-\lst@length=\count267
+\lst@length=\count269
 \lst@currlwidth=\dimen156
-\lst@column=\count268
-\lst@pos=\count269
+\lst@column=\count270
+\lst@pos=\count271
 \lst@lostspace=\dimen157
 \lst@width=\dimen158
-\lst@newlines=\count270
-\lst@lineno=\count271
+\lst@newlines=\count272
+\lst@lineno=\count273
 \lst@maxwidth=\dimen159
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count272
-\lst@skipnumbers=\count273
+\c@lstnumber=\count274
+\lst@skipnumbers=\count275
 \lst@framebox=\box50
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count274
+\c@float@type=\count276
 \float@exts=\toks31
 \float@box=\box51
 \@float@everytoks=\toks32
 \@floatcapt=\box52
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/mwe\mwe.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-01-09 L3 programming layer (loader) 
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count275
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box53
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex))
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
 Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\xspace.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count276
-\c@Blindtext=\count277
-\c@blind@countparstart=\count278
-\blind@countxx=\count279
-\blindtext@numBlindtext=\count280
-\blind@countyy=\count281
-\c@blindlist=\count282
-\c@blindlistlevel=\count283
-\c@blindlist@level=\count284
-\blind@listitem=\count285
-\c@blind@listcount=\count286
-\c@blind@levelcount=\count287
-\blind@mathformula=\count288
-\blind@Mathformula=\count289
-\c@blind@randomcount=\count290
-\c@blind@randommax=\count291
-\c@blind@pangramcount=\count292
-\c@blind@pangrammax=\count293
-)) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+\c@blindtext=\count278
+\c@Blindtext=\count279
+\c@blind@countparstart=\count280
+\blind@countxx=\count281
+\blindtext@numBlindtext=\count282
+\blind@countyy=\count283
+\c@blindlist=\count284
+\c@blindlistlevel=\count285
+\c@blindlist@level=\count286
+\blind@listitem=\count287
+\c@blind@listcount=\count288
+\c@blind@levelcount=\count289
+\blind@mathformula=\count290
+\blind@Mathformula=\count291
+\c@blind@randomcount=\count292
+\c@blind@randommax=\count293
+\c@blind@pangramcount=\count294
+\c@blind@pangrammax=\count295
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen162
 \captionmargin@=\dimen163
@@ -224,17 +225,17 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen168
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count294
-\c@continuedfloat=\count295
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count296
-\c@subtable=\count297
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+\c@subfigure=\count298
+\c@subtable=\count299
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfonts.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -323,20 +324,20 @@ LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 121.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux")
+) (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.aux)
 \openout1 = `"Homework #8.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 121.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 121.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 121.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 121.
@@ -348,13 +349,13 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 121.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 121.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 121.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 121.
@@ -393,24 +394,26 @@ LaTeX Font Info:    ... okay on input line 121.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count298
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+\c@lstlisting=\count300
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
+\scratchcounter=\count301
 \scratchdimen=\dimen169
 \scratchbox=\box54
-\nofMPsegments=\count300
-\nofMParguments=\count301
+\nofMPsegments=\count302
+\nofMParguments=\count303
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count302
+\MPscratchCnt=\count304
 \MPscratchDim=\dimen170
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks34
-) (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
@@ -425,79 +428,180 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r1.txt"
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r1.txt
 LaTeX Font Info:    Trying to load font information for OML+txr on input line 2.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxr.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
 (Font)              Font shape `OML/txmi/m/it' tried instead on input line 2.
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 Overfull \hbox (27.75908pt too wide) in paragraph at lines 4--5
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+
+Overfull \hbox (81.75963pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Overfull \hbox (111.75993pt too wide) in paragraph at lines 34--35
+[][][] 
+ []
+
+
+Overfull \hbox (111.75993pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (15.75896pt too wide) in paragraph at lines 40--41
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+<Rplot03.png, id=11, 1003.75pt x 1003.75pt>
+File: Rplot03.png Graphic file (type png)
+<use Rplot03.png>
+Package pdftex.def Info: Rplot03.png  used on input line 138.
+(pdftex.def)             Requested size: 433.62001pt x 433.6258pt.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 136.
-(C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 144.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 136.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 144.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 136.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 144.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 136.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 144.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-<Rplot01.png, id=1, 636.12656pt x 482.55281pt>
-File: Rplot01.png Graphic file (type png)
-<use Rplot01.png>
-Package pdftex.def Info: Rplot01.png  used on input line 141.
-(pdftex.def)             Requested size: 433.62001pt x 328.93414pt.
- [1{C:/Users/StefanoFochesatto/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+) [3 </Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Rplot03.png>] (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r2.txt
+Overfull \hbox (15.75896pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r2.txt"
+)
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r3.txt
 LaTeX Font Info:    Trying to load font information for OMS+txr on input line 3.
- (C:\Users\StefanoFochesatto\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxr.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 3.
+ [4])
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
-Overfull \hbox (15.75896pt too wide) in paragraph at lines 14--15
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[2 <c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Rplot01.png>]
-Overfull \hbox (183.76067pt too wide) in paragraph at lines 18--19
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+<Rplot02.png, id=25, 697.60625pt x 531.9875pt>
+File: Rplot02.png Graphic file (type png)
+<use Rplot02.png>
+Package pdftex.def Info: Rplot02.png  used on input line 172.
+(pdftex.def)             Requested size: 433.62001pt x 330.67307pt.
+[5] (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r4.txt
+Overfull \hbox (27.75908pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [3] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux") ) 
+
+Overfull \hbox (93.75975pt too wide) in paragraph at lines 12--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [6 </Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Rplot02.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r5.txt [7])
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r6.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r7.txt
+Overfull \hbox (46.38487pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[9])
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r8.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+(/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/r9.txt [10])
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+[11] [12] (/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.aux) ) 
 Here is how much of TeX's memory you used:
- 7302 strings out of 479618
- 112282 string characters out of 2859326
- 546923 words of memory out of 3000000
- 24353 multiletter control sequences out of 15000+200000
- 422972 words of font info for 74 fonts, out of 3000000 for 9000
+ 7335 strings out of 478994
+ 111588 string characters out of 5858185
+ 602885 words of memory out of 5000000
+ 24674 multiletter control sequences out of 15000+600000
+ 422972 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,11n,89p,419b,1873s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.pdf" (3 pages, 53806 bytes).
+ 86i,11n,89p,438b,1873s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "/Users/stefanofochesatto/Documents/Documents/College Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.pdf" (12 pages, 347693 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
