@@ -143,11 +143,27 @@
       \end{figure}
         \textbf{Code:}
         \begin{center}
-        \lstinputlisting[basicstyle = \footnotesize]{r2.txt}
+        \lstinputlisting[basicstyle = \footnotesize]{r2.txt} 
         \end{center}
+        \vspace{.15in}
 
+    \item[c.] Now repeat (b), but this time perform a cross validation. Which of these confusion matrices do you think gives you a better idea as to how well KNN will classify new observations.\\ 
+    \solution Applying one-out cross validation we get that the KNN misclassified 509 of the 1000 observations achieving an accuracy of 49\%.
+    Generally I will tend to trust the more skeptical model validation method so in this case I think the $\sim 50\%$ accuracy is true to what the KNN model is doing. Ideally we would be training the model on all the data, 
+    and gather more data to validate the model, rather than doing a split or cross validation.  \\
+    \textbf{Code:}
+    \begin{center}
+    \lstinputlisting[basicstyle = \footnotesize]{r3.txt} 
+    \end{center}
+    \vspace{.15in}
 
-  \end{enumerate}
+    \item[d.] Try several values of $k$ and look at the test/trina confusion matrix from (b) for each value of $k$. What is your preferred value of $k$.\\
+    \solution   
+  
+  
+  
+      \end{enumerate}
+
 \end{exercise}
 
 

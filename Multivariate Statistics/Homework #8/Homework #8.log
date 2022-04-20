@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2022.1.24)  26 MAR 2022 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2022.1.24)  19 APR 2022 21:21
 entering extended mode
 **"c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
 ("c:/Users/StefanoFochesatto/School Work/Homework-Spring-2022/Multivariate Statistics/Homework #8/Homework #8.tex"
@@ -485,17 +485,32 @@ Overfull \hbox (183.76067pt too wide) in paragraph at lines 18--19
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [3] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux") ) 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\r3.txt")
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+[3] ("c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.aux") ) 
 Here is how much of TeX's memory you used:
- 7302 strings out of 479618
- 112282 string characters out of 2859326
- 546923 words of memory out of 3000000
- 24353 multiletter control sequences out of 15000+200000
+ 7306 strings out of 479618
+ 112494 string characters out of 2859326
+ 552923 words of memory out of 3000000
+ 24354 multiletter control sequences out of 15000+200000
  422972 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  81i,11n,89p,419b,1873s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/StefanoFochesatto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.pdf" (3 pages, 53806 bytes).
+Output written on "c:/Users\StefanoFochesatto\School Work\Homework-Spring-2022\Multivariate Statistics\Homework #8\Homework #8.pdf" (3 pages, 55994 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
