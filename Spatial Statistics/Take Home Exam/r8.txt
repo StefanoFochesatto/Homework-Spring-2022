@@ -1,0 +1,2 @@
+> exp(sum(FullSecondOrder$coef))
+[1] 10.50405

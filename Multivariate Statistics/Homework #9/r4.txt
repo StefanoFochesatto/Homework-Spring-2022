@@ -1,0 +1,35 @@
+## Reassigning Best Model
+Model <- bestCV$BestModel
+## Initilizing Space For ROC Computation
+sen <- rep(NA, 801)
+spe <- rep(NA, 801)
+thresh <- rep(NA, 801)
+## Generating ROC Curve
+for (i in seq(-4,4,.01)){
+  ## Predicting with i Threshold
+  conf <- table(predict(Model)>i, dat$spec)
+  ## Storing threshold for quick access later
+  thresh[i] <- i
+  ## Computing Sensitivity and Specificity
+  sen[i] <- conf[1,1]/(conf[1,1] + conf[2,1]) 
+  spe[i] <- conf[2,2]/(conf[1,2] + conf[2,2]) 
+}
+
+## Pulling Values for ROC curve
+ROC <- unique(cbind(c(0,(1 - spe),1), c(0,sen,1), c(NA, thresh, NA)))
+ROC <- as.data.frame(ROC)
+
+## Plotting ROC Curve
+ROC <- ROC[order(ROC$V1),]
+plot(ROC$V1, ROC$V2, type = 'l', xlab = '1 - Specificity', ylab = 'Sensitivity')
+
+## Determining Best Threshold
+DistFromOptimal <- sqrt((ROC$V1 - 0)^2 + (ROC$V2 - 1)^2)
+ChosenThreshold <- ROC$V3[which.min(DistFromOptimal)]
+points(ROC$V1[2], ROC$V2[2], col = 'red')
+# -0.01
+
+conf <- table(predict(Model)>-.01, dat$spec)
+#        0  1
+# FALSE 16  2
+# TRUE   3 19

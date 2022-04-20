@@ -1,0 +1,5 @@
+plot(prob4_data$w1,prob4_data$w2,col=prob4_data$group, pch = 16)
+abline(h = -23)
+abline(h = 138)
+abline(v = 388.5)
+abline(v = 229)

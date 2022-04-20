@@ -1,0 +1,2 @@
+exam2data <- read.csv("exam2data.txt", sep="")
+plot(exam2data, pch = 3,cex = .5 )

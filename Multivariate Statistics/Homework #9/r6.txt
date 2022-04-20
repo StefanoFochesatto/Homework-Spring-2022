@@ -1,0 +1,5 @@
+> table(predict(tree_output)[,1]<0.5, prob4_data$group)
+       
+         1  2
+  FALSE 47  7
+  TRUE   3 23

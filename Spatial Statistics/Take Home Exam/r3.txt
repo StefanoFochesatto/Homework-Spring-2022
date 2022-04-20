@@ -1,0 +1,29 @@
+## Determining rectangular region
+> max(exam2data$x)
+[1] 9.87456
+> min(exam2data$x)
+[1] 0.005
+> max(exam2data$y)
+[1] 4.9444
+> min(exam2data$y)
+[1] 0.01314
+
+### Constructing ppp object
+> exam2data <- ppp(exam2data$x, exam2data$y, c(0,10), c(0,5))
+
+## Applying quadrat count
+> tmp <- quadratcount(exam2data, nx = 6, ny = 3)
+
+## Plotting counts
+> plot(tmp, main = 'Quadrat Count Test')
+
+## Conducting two sided quadrat test
+> quadrat.test(exam2data, nx = 6, ny = 3, alternative = 'two.sided')
+
+	Chi-squared test of CSR using quadrat counts
+
+data:  exam2data
+X2 = 60.155, df = 17, p-value = 1.982e-06
+alternative hypothesis: two.sided
+
+Quadrats: 6 by 3 grid of tiles

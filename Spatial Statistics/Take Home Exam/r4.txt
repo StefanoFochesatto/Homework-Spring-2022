@@ -1,0 +1,62 @@
+## Generate polygon for examdata. 
+> exam2data$poly <- getpoly()
+#Enter points with button 1
+#Finish with button 2
+#Don't try to join the polygon up - it is done for you.
+
+
+
+## Simulate the envelope of Khats:
+hh <- seq( from = 0, to = 12, by = .2 ) ## h's(distances) to compute the kHat
+kh <- khat( as.points(exam2data), exam2data$poly, s=hh ) ## Computing kHat for exam Data
+nn <- length(exam2data$x) ## Pulling length for simulation
+results <- Kenv.csr( nn, exam2data$poly,
+                     nsim=100, hh, quiet=TRUE )
+
+## Generating regular kHat envelope figure
+plot( hh, kh, pch=19, cex = .3, ylab = 
+    'Khat', xlab = 'h (distance)')
+lines( hh, results$lower, lty=3 )
+lines( hh, results$upper, lty=3 )
+
+## Generating Transformed kHat envelope figure
+plot( hh, sqrt(kh/pi), pch=19, cex = .3, 
+    ylab = 'sqrt(Khat)/pi', xlab = 'h (distance)')
+lines( hh, sqrt(results$lower/pi), lty=3 )
+lines( hh, sqrt(results$upper/pi), lty=3 )
+
+
+
+
+## Conducting Monte Carlo K-Function Test
+
+nsims <- 299 # Set Number of Simulations(- 1)
+results <- matrix( NA, nrow=nsims, ncol=length(hh)) #Initialize Storage Matrix
+results[1,] <- kh # Store kHat for our data
+
+nn <- length(exam2data$x) #Set length for simulation
+
+set.seed(123)
+############ Simulation ######################################
+for( i in 2:nsims ) {
+  # simulate a data set under CSR, estimate K-function for it:
+  tmp <- Kenv.csr( nn, exam2data$poly,
+                   nsim=1, hh, quiet=TRUE )
+  results[i,] <- tmp$lower # same as tmp$upper
+}
+############ Simulation ######################################
+
+##### Computing test statistics ##############################
+dh <- .02 # spacing for integral
+u.vec <- rep(NA, nsims)
+for( i in 1:nsims ) {
+  # find the mean of each column w/o i-th K-function
+  ave <- apply( results[-i,], 2, mean )
+  # subtract the i-th K-function from this average
+  diff <- ave - results[i,]
+  # and see how different it is from the average:
+  u.vec[i] <- sum( diff^2 ) * dh
+}
+hist( u.vec , main = 'Histogram of Distance from CSR')
+abline( v = u.vec[1] )
+tmp <- rank(u.vec)[1] # [1] 284
