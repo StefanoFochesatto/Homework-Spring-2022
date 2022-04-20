@@ -1,0 +1,7 @@
+Model <- bestCV$BestModel
+> table(predict(Model)>0, dat$spec) 
+## Actual class goes on top, predicted class goes on the right. 
+       
+         0  1
+  FALSE 16  2
+  TRUE   3 19

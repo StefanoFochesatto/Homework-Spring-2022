@@ -1,0 +1,14 @@
+# Fitting Each Model
+Intercept <- ppm(exam2data ~ 1)
+FirstOrder <- ppm(exam2data ~ x + y)
+SecondOrderNoInteraction <- ppm(exam2data ~ x + y + I(x^2) + I(y^2))
+FullSecondOrder <- ppm(exam2data ~ x + y + I(x^2) + I(y^2) + x*y)
+# Computing AIC
+> AIC(Intercept)
+# [1] -416.5883
+> AIC(FirstOrder)
+# [1] -457.5101
+> AIC(SecondOrderNoInteraction)
+# [1] -460.5883
+> AIC(FullSecondOrder)
+# [1] -462.3144

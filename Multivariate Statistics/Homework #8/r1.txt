@@ -13,8 +13,62 @@ length(na.omit(data)[,1])
 ## and bring that data in. 
 data <- data[, -c(1,7,8)]
 
-## Turning categorical variables into factors. 
-data$Sex <- as.numeric(as.factor(data$Sex))
-data$Housing <- as.numeric(as.factor(data$Housing))
-data$Purpose <- as.numeric(as.factor(data$Purpose))
+## Turning categorical variables into factors (Works for LDA). 
+data$Sex <- as.factor(data$Sex)
+data$Housing <- as.factor(data$Housing)
+data$Purpose <- as.factor(data$Purpose)
+data$Kredit <- as.factor(data$Kredit)
 
+## Dummy Variables were used for KNN()
+## library(fastDummies)
+## dataDummies <- dummy_cols(data, select_columns=c('Sex', 'Housing', 'Purpose'),
+##            remove_first_dummy=TRUE)
+## dataDummies <- dataDummies[,-c(3,5,8)]
+## data <- dataDummies
+
+
+## Plotting Pairs
+pairs(data[,-1], col = data[,1])
+
+
+______________________________________________________________________________________
+## MANOVA
+
+> summary.aov(
+    manova(cbind(Age, Sex, Job, Housing, Credit.amount, Duration, Purpose) ~ data[,1], 
+    data = data[,-1]))
+## None of the Predictors are significantly different between classes. 
+ Response Age :
+             Df Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1     23  23.467  0.1812 0.6704
+Residuals   998 129248 129.507               
+
+ Response Sex :
+             Df  Sum Sq  Mean Sq F value Pr(>F)
+data[, 1]     1   0.019 0.019048  0.0889 0.7657
+Residuals   998 213.881 0.214310               
+
+ Response Job :
+             Df Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1   0.18 0.18305  0.4282  0.513
+Residuals   998 426.60 0.42746               
+
+ Response Housing :
+             Df  Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1   0.282 0.28233  1.0003 0.3175
+Residuals   998 281.677 0.28224               
+
+ Response Credit.amount :
+             Df     Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1    5325750 5325750  0.6682 0.4139
+Residuals   998 7954549877 7970491               
+
+ Response Duration :
+             Df Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1      9   9.261  0.0636 0.8009
+Residuals   998 145260 145.551               
+
+ Response Purpose :
+             Df Sum Sq Mean Sq F value Pr(>F)
+data[, 1]     1    1.1  1.1293  0.2884 0.5914
+Residuals   998 3908.0  3.9158               

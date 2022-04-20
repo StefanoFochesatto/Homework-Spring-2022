@@ -1,0 +1,61 @@
+## Fitting the Full First Order Model
+LogReg <- glm(spec ~. , data = dat, family = 'binomial')
+summary(LogReg)
+__________________________________________________________________
+Call:
+glm(formula = spec ~ ., family = "binomial", data = dat)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.23521  -0.06816   0.00447   0.17316   1.88553  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)  
+(Intercept) -45.58759   25.22084  -1.808   0.0707 .
+x1            0.24231    0.10312   2.350   0.0188 *
+x2            0.03274    0.07395   0.443   0.6580  
+x3           -0.08899    0.10782  -0.825   0.4091  
+x4            0.03132    0.09909   0.316   0.7520  
+x5           -0.09079    0.11656  -0.779   0.4360  
+x6            0.06345    0.06669   0.951   0.3414  
+x7           -0.05558    0.07303  -0.761   0.4466  
+x8            0.32467    0.13804   2.352   0.0187 *
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 55.352  on 39  degrees of freedom
+Residual deviance: 16.059  on 31  degrees of freedom
+AIC: 34.059
+
+Number of Fisher Scoring iterations: 8
+__________________________________________________________________
+
+## Fitting the Null Model 
+LogRegNull <- glm(spec ~1 , data = dat, family = 'binomial')
+summary(LogRegNull)
+__________________________________________________________________
+Call:
+glm(formula = spec ~ 1, family = "binomial", data = dat)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.220  -1.220   1.135   1.135   1.135  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)   0.1001     0.3166   0.316    0.752
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 55.352  on 39  degrees of freedom
+Residual deviance: 55.352  on 39  degrees of freedom
+AIC: 57.352
+
+Number of Fisher Scoring iterations: 3
+__________________________________________________________________
+
+
+## Deviance Logliklihood Ratio Test. 
+DevianceDifference <- LogRegNull$deviance - LogReg$deviance
+pchisq(DevianceDifference, 8, lower.tail=FALSE)
+#[1] 4.3377e-06

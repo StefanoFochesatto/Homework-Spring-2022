@@ -1,0 +1,26 @@
+### Set Poly Boundary 
+exam2data$poly[1,] <- c(0,5)
+exam2data$poly[2,] <- c(0,0)
+exam2data$poly[3,] <- c(10,0)
+exam2data$poly[4,] <- c(10,5)
+
+rho <- length(exam2data$x)/areapl(exam2data$poly)
+Model <- pcp(as.points(exam2data), exam2data$poly)
+
+
+#> Model
+#$par
+#s2       rho 
+#0.6996379 0.4824805 
+#
+#$value
+#[1] 0.004507315
+
+#> length(exam2data$x)
+#[1] 284
+
+#> 0.4824805*areapl(exam2data$poly) 
+#[1] 24.78759
+
+# length(exam2data$x) - 25
+# 259

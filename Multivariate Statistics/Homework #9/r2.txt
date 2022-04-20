@@ -1,0 +1,78 @@
+## Reformatting Data for bestglm package
+Xy<-as.data.frame(cbind(dat[,-1],dat[,1]))
+names(Xy)<-c(paste("X",1:8,sep=""),"y")
+
+## Finding best Logistic Regression for all three fitting criteria. 
+bestCV<- bestglm(Xy, IC="CV", family=binomial)
+bestAIC<- bestglm(Xy, IC="AIC", family=binomial)
+bestBIC<- bestglm(Xy, IC="BIC", family=binomial)
+____________________________________________________________________________
+> summary(bestCV$BestModel) 
+
+Call:
+glm(formula = y ~ ., family = family, data = data.frame(Xy[, 
+    c(bestset[-1], FALSE), drop = FALSE], y = y))
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.46028  -0.31031   0.05362   0.32536   1.69864  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -34.63672   12.47114  -2.777  0.00548 **
+X1            0.13653    0.04473   3.052  0.00227 **
+X8            0.21248    0.08635   2.461  0.01387 * 
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 55.352  on 39  degrees of freedom
+Residual deviance: 20.800  on 37  degrees of freedom
+AIC: 26.8
+
+Number of Fisher Scoring iterations: 6
+____________________________________________________________________________
+> summary(bestAIC$BestModel) 
+
+Call:
+glm(formula = y ~ ., family = family, data = Xi, weights = weights)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.46028  -0.31031   0.05362   0.32536   1.69864  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -34.63672   12.47114  -2.777  0.00548 **
+X1            0.13653    0.04473   3.052  0.00227 **
+X8            0.21248    0.08635   2.461  0.01387 * 
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 55.352  on 39  degrees of freedom
+Residual deviance: 20.800  on 37  degrees of freedom
+AIC: 26.8
+
+Number of Fisher Scoring iterations: 6
+____________________________________________________________________________
+> summary(bestBIC$BestModel) 
+
+Call:
+glm(formula = y ~ ., family = family, data = Xi, weights = weights)
+
+Deviance Residuals: 
+     Min        1Q    Median        3Q       Max  
+-2.46028  -0.31031   0.05362   0.32536   1.69864  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -34.63672   12.47114  -2.777  0.00548 **
+X1            0.13653    0.04473   3.052  0.00227 **
+X8            0.21248    0.08635   2.461  0.01387 * 
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 55.352  on 39  degrees of freedom
+Residual deviance: 20.800  on 37  degrees of freedom
+AIC: 26.8
+
+Number of Fisher Scoring iterations: 6

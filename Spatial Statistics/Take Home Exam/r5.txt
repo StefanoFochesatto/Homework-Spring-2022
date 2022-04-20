@@ -1,0 +1,33 @@
+set.seed(123)
+# Computing all nearest event distances:
+W <- nndistG(cbind(exam2data$x, exam2data$y))$dists
+
+# Computing Sample Size for WHat and Area
+n.tot <- length(exam2data$x)
+n.in.SRS <- round(n.tot/10)
+# Here’s the sample of events I’ll use for the test:
+WSamp <- sample(W, size=n.in.SRS, replace=FALSE)
+Area <- areapl(exam2data$poly)
+
+## Estimated Intensity
+lambda.hat <- n.tot / Area
+# [1] 5.026166
+
+## Computing the Test Statistic
+ATest <- 2*sqrt(lambda.hat)*mean(WSamp) 
+## [1]  1.010071
+
+
+
+n.sims <- 2000 ## Setting number of simulations (-1).
+A.results <- rep(NA,n.sims)
+for( i in 1:n.sims ) {
+  my.sim.data <- csr( exam2data$poly, npoints=n.tot)
+  Wall <- nndistG( my.sim.data )$dists
+  WSamp <- sample( Wall, size=n.in.SRS, replace=FALSE)
+  A.results[i] <- 2*sqrt(lambda.hat)*mean(WSamp)
+  }
+median(A.results)
+# [1] 1.02442
+rank( c(ATest,A.results))[1]
+# [1] 890

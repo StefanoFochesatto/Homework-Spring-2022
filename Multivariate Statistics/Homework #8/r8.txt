@@ -1,0 +1,12 @@
+QDAclassifier <- qda(data[,1] ~.  ,data = data[,-1])
+confusionMatrix(factor(data[,1]),
+                predict(QDAclassifier)$class)
+_____________________________________________________
+Confusion Matrix and Statistics
+
+          Reference
+Prediction   0   1
+         0  69 231
+         1  76 624
+
+Accuracy : 0.693    

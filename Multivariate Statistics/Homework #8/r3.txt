@@ -1,13 +1,20 @@
-## Performing one-out cross validation
+## One-out Cross Validation. 
 CV_classifications <- rep(NA,1000)
 for(i in 1:1000){
-  tmp_rule <- D2.disc(data=data[-i,2:8],
-                      grouping=data[-i,1])
-  CV_classifications[i] <- predict(tmp_rule,
-                                   newdata=data[i,2:8])$class
+  ## Build classifier on one-out data
+  tmp_rule <- knn(train=data[-i,-1],
+                  test=data[i,-1],
+                  cl=data[-i,1], k = 32)
+  ## Predict one-out data
+  CV_classifications[i] <- tmp_rule[1]
 }
+
 ## Generating confusion matrix
 table(data[,1], CV_classifications - 1)
-#      0   1
-#  0 137 163
-#  1 328 372
+##     0   1
+## 0   0 300
+## 1   3 697
+
+## Checking prior dist of data
+length(data$Kredit[data$Kredit == 1])
+[1] 700
